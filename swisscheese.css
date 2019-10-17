@@ -1,0 +1,72 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url(https://cdn.britannica.com/65/162465-050-9CDA9BC9/Alps-Switzerland.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    margin: 0;
+    position: relative;
+}
+
+.fancynav {
+    display: flex;
+    width: 4.375rem;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+    background-color: black;
+    opacity: 1;
+    align-items: center;
+}
+
+
+/*#img1 {
+    background-image: url(https://cdn.britannica.com/65/162465-050-9CDA9BC9/Alps-Switzerland.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    margin: 0;
+    position: relative;
+} */
+
+h1{
+    font-size: 50px;
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    top: 20%;
+    z-index: 2;
+    left: 10%;
+}
+
+.burger-icon {
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.bar-1, .bar-2, .bar-3  {
+    top: 0;
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin: 6px 0;
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+ .change .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar-2 {opacity: 0;}
+  
+  .change .bar-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
