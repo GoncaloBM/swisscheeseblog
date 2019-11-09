@@ -1,0 +1,402 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.head-bar {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    z-index: 2;
+    background-color: #f6f6f6;
+    display: flex;
+    /* align-items: center; */
+}
+
+#search-icon {
+    position: absolute;
+    left: 80%;
+    /*vertical-align: middle; */
+    background-color: #d3c9d1;
+    padding-top: 1%;
+    padding-right:0.2%;
+    padding-left: 0.2%;
+    padding-bottom: 0.1%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+}
+
+.search {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    display: none;
+    transition-duration: ease-in-out 0.5s;
+}
+
+#search-close-button {
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 95%;
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.search-container {
+    width: 40%;
+    /* left: 30%;
+    top: 50%; */
+    vertical-align: middle;
+    position: absolute;
+    line-height: 3rem;
+}
+
+#search-input {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    font-size: 2rem;
+    color: white;
+}
+
+#submit-button {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+}
+
+.fancynav {
+    display: flex;
+    width: 72px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 20;
+    background-color:#303030;
+    opacity: 1;
+    align-items: center;
+}
+
+#side-menu {
+    position: fixed;
+    width: 20%;
+    height: 100vh;
+    background-color: #303030;
+    z-index: 19;
+    color: #8b8b8b;
+    right: -20%;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s linear;
+
+}
+
+#side-menu.active {
+    right: 0px;
+}
+
+.side-menu-item {
+    list-style: none;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.side-menu-item:hover {
+    color: white;
+}
+
+.main-page {
+    width: 95%;
+}
+
+.main-image{
+    display: block;
+    width: 100%;
+    background-image: url(https://files.slack.com/files-pri/TPAN3NU3W-FPTS6NG9J/zermatt-2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    position: relative;
+    filter: grayscale(90%);
+
+    /* parallax efect */
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#title{
+    font-size: 60px;
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    top: 30%;
+    z-index: 2;
+    left: 10%;
+    color: white;
+}
+
+#sub-title {
+    font-size: 20px;
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    left: 10%;
+    color: white;
+    top: 50%;
+}
+
+.red-box-1 {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    height: 40px;
+    width: 60px;
+    z-index: 2;
+    display: block;
+    background-color: red;
+    filter: none;
+}
+
+.red-box-2 {
+    position: absolute;
+    top: 22%;
+    left: 0;
+    height: 40px;
+    width: 60px;
+    z-index: 2;
+    display: block;
+    background-color: red;
+}
+
+.separator {
+    width: 100%;
+    background-color: black;
+    height: 1px;
+}
+
+.photostand {
+    z-index: 0;
+    /*background-image: url(http://getwallpapers.com/wallpaper/full/2/e/d/1131769-switzerland-wallpaper-1920x1080-screen.jpg);*/
+    background-color: white;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    width: 95%;
+    min-height: 30vw;
+
+    /* parallax effect */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo-row {
+    z-index: 3;
+    width: 33vw;
+    /*background-position: center;*/
+    background-size: contain;
+    margin: 20px;
+    position: relative;
+}
+
+#photo1 {
+    background-image: url(https://i.ytimg.com/vi/1BjgBoummtE/maxresdefault.jpg);
+    height: 18.6vw;
+    border: black 1px solid;
+}
+
+#photo2 {
+    background-image: url(https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1477291157000/photosp/592561ca-a07b-48b7-8172-2d10a8741c6e/stock-photo-rain-blue-clouds-pool-swiss-alps-switzerland-relax-alps-villahonegg-592561ca-a07b-48b7-8172-2d10a8741c6e.jpg);  
+    height: 25vw;
+    border: black 1px solid;
+}
+
+.photo-row-text {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 100%;
+    z-index: 40;  
+}
+
+.pic-button {
+    cursor: pointer;
+    font-size: 250%;
+    padding: 1%;
+    color: inherit;
+    opacity: 0;
+    /*line-height: 100%;*/
+    position: relative;
+    transition: all 0.5s;
+}
+
+.text-hover:hover{
+    opacity: 0.8;
+    background-color: rgba(0, 0,0, 1);
+}
+
+.text-hover:hover .pic-button{
+    opacity: 1;
+    text-decoration: none;
+    color: red;
+}
+
+.pic-button:hover {
+    font-size: 350%;
+}
+
+#caption-row {
+    width: 40vh;
+}
+#caption-1 {
+    border: 0.2px solid black;
+    height: 13vw;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+#caption-1 p {
+    align-self: center;
+    font-size: 0.75rem;
+    justify-self: center;
+    padding: 10px;
+}
+
+.know-more {
+    position: absolute;
+    color: red;
+    border: solid red 0.5px;
+    cursor: pointer;
+}
+
+#caption-2 {
+    border: 0.2px solid black;
+    height: 10vw;
+}
+
+.burger-icon {
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.bar-1, .bar-2, .bar-3  {
+    top: 0;
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin: 6px 0;
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+ .change .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar-2 {opacity: 0;}
+  
+  .change .bar-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+
+  }
+
+#footer {
+    position: absolute;
+    width: 95%;
+    height: 10vh;
+    z-index: 2;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-1 {
+    width: 40px;
+    height: 5vh;
+    border: 0.5px solid black;
+    margin: 10px;
+}
+
+#logo-2 {
+    width: 40px;
+    height: 5vh;
+    border: 0.5px solid black;
+    margin: 10px;
+}
+
+#logo-3 {
+    width: 40px;
+    height: 5vh;
+    border: 0.5px solid black;
+    margin: 10px;
+}
+
+@media (max-width: 1270px) {
+
+    #sub-title {
+        font-size: 15px;
+    }
+
+    #side-menu {
+        width: 30%;
+        right: -30%;
+    }
+
+    #caption-row {
+        width: 90vh;
+    }
+}
+
+@media (max-width: 750px) {
+    #side-menu {
+        width: 100%;
+        right: -100%;
+        justify-content: center;
+    }
+
+    .photo-row {
+        width: 70vh;
+    }
+
+    #photo1 {
+        height: 40vh;
+    }
+
+    #photo2 {
+        height: 53vh;
+    }
+
+    #caption-row {
+        width: 70vh;
+    }
+}
