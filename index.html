@@ -29,7 +29,7 @@
             <li class="side-menu-item">Mind</li>
             <li class="side-menu-item">Body</li>
             <li class="side-menu-item">Soul</li>
-            <li class="side-menu-item">Xclusive</li>
+            <li class="side-menu-item xclusive-rotate"><img id='x-icon' src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/main.png">clusive</li>
             <li class="side-menu-item">About us</li>
         </ul>
     </div>
@@ -38,6 +38,7 @@
 
     <main>
     <div class="head-bar">
+        <a id="logo" href="#"> <img src='https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Logo.png' alt="logo-icon" </a> 
         <a id="search-icon" href="#"> <img src="https://files.slack.com/files-pri/TPAN3NU3W-FPUC53H6C/search.png" alt="magni-icon"></a>
     </div>
 
@@ -108,13 +109,16 @@
             const closeSearch = document.getElementById('search-close-button');
             const search = document.getElementsByClassName('search')[0];
             const submitSearch = document.getElementById('submit-button');
+            const hideHeadBar = document.getElementsByClassName('head-bar')[0];
 
             openSearch.addEventListener('click', () => {  
             search.style.display = 'flex';
+            hideHeadBar.style.display = 'none';
             })
 
             closeSearch.addEventListener('click', () => {  
             search.style.display = 'none';
+            hideHeadBar.style.display = 'flex';
             })
 
             submitSearch.addEventListener('click', () => {
