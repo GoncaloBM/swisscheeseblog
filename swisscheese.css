@@ -123,6 +123,10 @@ body {
     transition: color 0.5s;
 }
 
+.side-menu-item a {
+    text-decoration: none;
+}
+
 #x-icon {
     height: 2rem;
     transform: rotate(-45deg);
@@ -134,6 +138,7 @@ body {
 }
 
 .side-menu-item:hover {
+    text-decoration: none;
     color: white;
 }
 
@@ -157,29 +162,34 @@ body {
     background-repeat: no-repeat;
 }
 
+.container-opac{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    width: 70%;
+    background-color:rgba(0,0,0,0.6);
+    border-radius: 5px;
+    top: 30%;
+    left: 5%;
+}
+
+
 #title{
     font-size: 60px;
-    position: absolute;
-    background-color: transparent;
     display: block;
-    top: 30%;
+    top: 0%;
     z-index: 2;
-    left: 10%;
     color: white;
 }
 
 #sub-title {
     font-size: 20px;
-    position: absolute;
-    background-color: transparent;
     display: block;
-    left: 10%;
     color: white;
-    top: 50%;
 }
 
 .red-box-1 {
-    position: absolute;
+    position: fixed;
     top: 15%;
     left: 0;
     height: 40px;
@@ -207,7 +217,7 @@ body {
 }
 
 .red-box-2 {
-    position: absolute;
+    position: fixed;
     top: 22%;
     left: 0;
     height: 40px;
@@ -270,6 +280,8 @@ body {
 
 #photo2 {
     background-image: url(https://res.cloudinary.com/twenty20/private_images/t_watermark-criss-cross-10/v1477291157000/photosp/592561ca-a07b-48b7-8172-2d10a8741c6e/stock-photo-rain-blue-clouds-pool-swiss-alps-switzerland-relax-alps-villahonegg-592561ca-a07b-48b7-8172-2d10a8741c6e.jpg);  
+    background-size: cover;
+    background-position: center;
     height: 25vw;
     border: black 1px solid;
     margin: 20px;
@@ -330,6 +342,7 @@ body {
 .caption-1 {
     background-image: url(http://www.whitestartravel.com.au/assets/null-stern-hotel-appenzell-03.jpg);
     background-size: cover;
+    background-position: center;
     border: 0.2px solid black;
     height: 12vw;
     margin-bottom: 20px;
@@ -344,6 +357,7 @@ body {
     height: 12vw;
     background-image: url(https://snbchf.com/wp-content/uploads/2016/05/swiss-culture.jpg);
     background-size: cover;
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -394,7 +408,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 20px;
-    height: 4.5vh;
+    height: 5vh;
     margin: 10px;
     transition: all 0.5s;
 }
@@ -407,8 +421,8 @@ body {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/008717ff9d97cf279a5c59df127144b9/linkedin.png);
     background-size: cover;
     background-position: center;
-    width: 35px;
-    height: 4.3vh;
+    width: 40px;
+    height: 5vh;
     margin: 10px;
     transition: all 0.5s;
 }
@@ -421,8 +435,8 @@ body {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/1e4ec2a950905469f80d49f43fd30099/instagram.png);
     background-size: cover;
     background-position: center;
-    width: 35px;
-    height: 4.3vh;
+    width: 40px;
+    height: 5vh;
     margin: 10px;
     transition: all 0.5s;
 }
@@ -435,8 +449,8 @@ body {
     background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/twitter.png);
     background-size: cover;
     background-position: center;
-    width: 35px;
-    height: 4.3vh;
+    width: 40px;
+    height: 5vh;
     margin: 10px;
     transition: all 0.5s;
 }
