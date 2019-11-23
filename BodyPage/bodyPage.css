@@ -1,0 +1,707 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.head-bar {
+    width: 100%;
+    height: 60px;
+    z-index: 2;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    position: absolute;
+}
+
+#search-icon {
+    position: absolute;
+    left: 80%;
+    /*vertical-align: middle; */
+    background-color: #d3c9d1;
+    padding-top: 1%;
+    padding-right:0.2%;
+    padding-left: 0.2%;
+    padding-bottom: 0.1%;
+    border-bottom-left-radius: 5%;
+    border-bottom-right-radius: 5%;
+    align-self: flex-start;
+}
+
+#logo {
+    position: absolute;
+    left: 1%;
+}
+
+#logo img {
+    height: 50px;
+}
+
+.search {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 30;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    display: none;
+    transition: all 0.5s;
+}
+
+#search-close-button {
+    position: absolute;
+    color: white;
+    top: 5%;
+    left: 95%;
+    font-size: 2rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.search-container {
+    width: 40%;
+    /* left: 30%;
+    top: 50%; */
+    vertical-align: middle;
+    position: absolute;
+    line-height: 3rem;
+}
+
+#search-input {
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    font-size: 2rem;
+    color: white;
+}
+
+#submit-button {
+    width: 10%;
+    background-color: transparent;
+    border: none;
+}
+
+.fancynav {
+    display: flex;
+    width: 72px;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: fixed;
+    z-index: 20;
+    background-color:#303030;
+    opacity: 1;
+    align-items: center;
+}
+
+#side-menu {
+    position: fixed;
+    width: 20%;
+    height:100vh;
+    background-color: #303030;
+    z-index: 19;
+    color: #8b8b8b;
+    right: -20%;
+    display: flex;
+    align-items: center;
+    transition: all 0.5s linear;
+
+}
+
+#side-menu.active {
+    right: 0px;
+}
+
+.side-menu-item {
+    list-style: none;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.5s;
+}
+
+#x-icon {
+    height: 2rem;
+    transform: rotate(-45deg);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.xclusive-rotate:hover #x-icon{
+    transform: rotate(125deg);
+}
+
+.side-menu-item:hover {
+    color: white;
+}
+
+.main-page {
+    /*
+    width: calc(100% - 72px);
+    */
+
+    width: 100%;
+}
+
+.main-image{
+    display: block;
+    background-image: url(https://skydiveswitzerland.com/wp-content/uploads/2019/04/skydive-switzerland-fun-jumpers-swiss-flag-flying-1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    margin: 0;
+    position: relative;
+    filter: grayscale(90%);
+
+    /* parallax efect */
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#title{
+    font-size: 60px;
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    top: 30%;
+    z-index: 2;
+    left: 10%;
+    color: white;
+}
+
+#sub-title {
+    font-size: 20px;
+    position: absolute;
+    background-color: transparent;
+    display: block;
+    left: 10%;
+    color: white;
+    top: 50%;
+}
+
+.red-box-1 {
+    position: fixed;
+    top: 15%;
+    left: 0;
+    height: 40px;
+    width: 60px;
+    z-index: 2;
+    display: flex;
+    background-color: red;
+    filter: none;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.5s;
+}
+
+.red-box-1:hover {
+    width: 65px;
+}
+
+.red-logo {
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.red-logo img {
+    width: 30px;
+}
+
+.red-box-2 {
+    position: fixed;
+    top: 22%;
+    left: 0;
+    height: 40px;
+    width: 60px;
+    z-index: 2;
+    display: flex;
+    background-color: red;
+    align-items: center;
+    justify-content: flex-end;
+    transition: all 0.5s;
+}
+
+.red-box-2:hover {
+    width: 65px;
+}
+
+.separator {
+    width: 100%;
+    background-color: black;
+    height: 1px;
+}
+
+.sec-page {
+    /*width: calc(100% - 72px);*/
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    padding-bottom: 0px;
+    margin-bottom: 40px;
+    transition: padding-bottom 0.2s linear;
+}
+
+.carousel-caption {
+    display: flex;
+    align-items: center;
+}
+
+ .container-of-captions {
+    background-color:rgba(0,0,0,0.5);
+    border-radius: 5px;
+}
+
+.description-title {
+    font-size: 2rem;
+}
+
+.descricao-aparece {
+    cursor: pointer;
+}
+
+.carousel-imagem {
+    z-index: 1;
+}
+
+.image-description {
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border: 1px solid black;
+    z-index: 0;
+    width: 70%;
+    border-radius: 10px;
+}
+
+.description-image {
+    max-height: 100px;
+    margin: 10px;
+}
+
+#close-description {
+    cursor: pointer;
+}
+
+#description-1 {
+    display: none;
+    text-align: center;
+}
+
+#description-2 {
+    display: none;
+}
+
+#description-3 {
+    display: none;
+}
+
+.burger-icon {
+    display: inline-block;
+    cursor: pointer; 
+}
+
+.bar-1, .bar-2, .bar-3  {
+    top: 0;
+    width: 35px;
+    height: 5px;
+    background-color:white;
+    margin: 6px 0;
+    margin-left: 15px;
+    transition: 0.5s;
+}
+
+ .change .bar-1 {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+  }
+  
+  .change .bar-2 {opacity: 0;}
+  
+  .change .bar-3 {
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+
+  }
+
+#footer {
+    position: absolute;
+    width: 100%;
+    height: 10vh;
+    z-index: 2;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#logo-1 {
+    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/42x78/883e1ca7fbb9396df31ab62a3cd42b8d/facebook.png);
+    background-size: cover;
+    background-position: center;
+    width: 20px;
+    height: 4.5vh;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+#logo-1:hover {
+    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/42x78/150be7b44ad787436ccf3f00e01baaa0/facebook_hover.png) ;
+}
+
+#logo-2 {
+    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/008717ff9d97cf279a5c59df127144b9/linkedin.png);
+    background-size: cover;
+    background-position: center;
+    width: 35px;
+    height: 4.3vh;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+#logo-2:hover {
+    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/19405d67dd05366ffcfc377d6c5847eb/linkedin_hover.png);
+}
+
+#logo-3 {
+    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/1e4ec2a950905469f80d49f43fd30099/instagram.png);
+    background-size: cover;
+    background-position: center;
+    width: 35px;
+    height: 4.3vh;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+#logo-3:hover {
+    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/241edceaa745d5f51e516510720e1f9f/instagram_hover.png);
+}
+
+#logo-4 {
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/twitter.png);
+    background-size: cover;
+    background-position: center;
+    width: 35px;
+    height: 4.3vh;
+    margin: 10px;
+    transition: all 0.5s;
+}
+
+#logo-4:hover {
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/twitter_hover.png);
+}
+
+
+@media (max-width: 1270px) {
+
+    .photo-row {
+        width: 40%;
+    }
+
+    #sub-title {
+        font-size: 15px;
+    }
+
+    #side-menu {
+        width: 30%;
+        right: -30%;
+    }
+
+    #caption-row {
+        width: 85%;
+        margin-bottom: 10px;
+    }
+
+    .caption-1 {
+        height: 50vh;
+    }
+
+    .caption-2 {
+        height: 50vh;
+    }
+}
+
+@media (max-width: 750px) {
+
+    #title {
+        font-size: 40px;
+    }
+
+    #logo img {
+        height: 40px;
+    }
+
+    #search-icon {
+        left: 75%;
+    }
+
+    #side-menu {
+        width: 100%;
+        right: -100%;
+        justify-content: center;
+    }
+
+    .photo-row {
+        width: 70vh;
+    }
+
+    #photo1 {
+        margin-top: 20px;
+        height: 40vh;
+    }
+
+    #photo2 {
+        height: 53vh;
+    }
+
+    #caption-row {
+        width: 85%;
+    }
+
+    .caption-1{
+        height: 50vh;
+    }
+
+    .caption-2 {
+        height: 50vh;
+    }
+}
+/* Silvia Code */
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px; 
+    background-color:rgb(236, 228, 228);
+    border: 3px solid white;
+   
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+
+.bNavBtn {
+    cursor: pointer;
+    position: absolute;
+    width: 3rem;
+    height: 2.5rem;
+    z-index: 101;
+    transition: opacity .4s;
+}
+
+.eNavBtn_ico {
+    position: relative;
+    width: 3rem;
+    height: 2.25rem;
+}
+.eNavBtn_bar:first-child {
+    transition-property: top,transform;
+    transition-duration: .3s,.3s;
+    transition-delay: .3s,0s;
+}
+.eNavBtn_bar:first-child {
+    top: 0;
+    margin: 0;
+}
+
+.eNavBtn_bar:last-child {
+    transition-property: bottom,transform;
+    transition-duration: .3s,.3s;
+    transition-delay: .3s,0s;
+}
+.eNavBtn_bar:last-child {
+    top: auto;
+    bottom: 0;
+    margin: 0;
+}   
+.eNavBtn_bar {
+    transition: 0s .3s;
+}
+
+.menu-toggle {
+    position: fixed;
+    right: 2px;
+    top: 15px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    color: #fff;
+    background: rgb(240, 240, 240);
+    line-height: 50px;
+    z-index: 999;
+  }
+  
+.menu-toggle:focus, .menu-toggle:hover {
+    color: #fff;
+  }
+  
+.menu-toggle:hover {
+    background: white;
+  }
+.fa-bars:before {
+    content: "\f0c9";
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.bHeader {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 4.5rem;
+    z-index: 101;
+    background-color: rgb(240, 240, 240);
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+a.bLogo {
+    position: absolute;
+    left: 1rem;
+    top: 1.15rem;
+    display: block;
+    width: 16.5625rem;
+    height: 2.1875rem;
+    background-image: url('https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Logo.png');
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: contain;
+    z-index: 101;
+    transition: .4s;
+}
+.eNav_item.jsSelected,
+.eNav_item.mLargeView {
+ height:25%
+}
+
+.fa {
+    color:red;
+}
+
+.fa-times:before {
+    content: "\f00d";
+}
+
+
+.fa, .fab, .fad, .fal, .far, .fas {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.menu__hamburger {
+    width: 40px;
+    height: 40px;
+    display: block;
+    cursor: pointer; 
+    left:0;
+    margin: -6px auto 0;
+    margin-right: 30px;
+    position: relative;
+    transition: opacity .4s cubic-bezier(0.4, 0, 0, 1),transform .4s cubic-bezier(0.4, 0, 0, 1);
+}
+@media (max-width: 2024px) and (min-width: 160px) {
+.menu__hamburger js-toggle-menu {
+    margin: 0 -60px 0 0; 
+    left:-100px;}
+}
+
+button, select, label {
+    cursor: pointer;
+}
+
+input, textarea, button, select, svg text {
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-appearance: none;
+    -webkit-font-smoothing: antialiased;
+    background: none;
+    border-radius: 0;
+    border: none;
+    color: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-menu u {
+    display: block;
+    background-color: red;
+    width: 47px;
+    height: 2px;
+    margin: 6px 0px;
+    transform-origin: center;
+    transform: translateY(0) rotate(0deg) scaleX(.7);
+    transition: transform 0.3s cubic-bezier(0.4, 0, 0, 1);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.icon-menu {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+u {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+.icon-menu u:nth-child(2) {
+    transition-delay: 0.03s;
+}
+body.is-menu-open .menu__hamburger .icon-menu u {
+    transition-duration: 0.3s;
+}
+
+body.is-menu-open .menu__hamburger .icon-menu u:nth-child(2) {
+    transform: translateY(0) rotate(0deg) scaleX(0);
+}
+
+.modernizr-no-touchevents body.is-menu-open .menu__hamburger .icon-menu:hover u:nth-child(2), .accessibility body.is-menu-open .menu__hamburger .icon-menu:focus u:nth-child(2) {
+    transform: translateY(0) rotate(0deg) scaleX(0);
+}
+
+@media (max-width: 1023px) {
+.menu__hamburger {
+    -ms-flex-order: 1;
+    order: 1;
+    margin: 0 0 0 16px;
+}
+}
+
+button {
+    cursor: pointer;
+}
+
+#icon-menu input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}

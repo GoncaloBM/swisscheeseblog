@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bodyPage.css">
+    <title>Swiss Cheese</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+    </header>
+
+    <navbar>
+    <div class="fancynav">
+            <div class="burger-icon"  onclick="myFunction(this)">
+                    <div class="bar-1"></div>
+                    <div class="bar-2"></div>
+                    <div class="bar-3"></div>
+            </div>
+    
+    </div>
+    <div id="side-menu">
+        <ul>
+            <li class="side-menu-item">Mind</li>
+            <li class="side-menu-item">Body</li>
+            <li class="side-menu-item">Soul</li>
+            <li class="side-menu-item xclusive-rotate"><img id='x-icon' src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/main.png">clusive</li>
+            <li class="side-menu-item">About us</li>
+        </ul>
+    </div>
+
+    </navbar>
+
+    <main>
+    <div class="head-bar">
+        <a id="logo" href="#"> <img id= 'logo-swiz' src='https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Logo.png' alt="logo-icon" </a> 
+        <a id="search-icon" href="#"> <img src="https://files.slack.com/files-pri/TPAN3NU3W-FPUC53H6C/search.png" alt="magni-icon"></a>
+    </div>
+
+    <div class="search">
+        <a id='search-close-button' href="#">X</a>
+        <div class="search-container">
+            <form action="/action_page.php">
+                <input id= 'search-input' type="text" placeholder="Search.." name="search">
+                <button href = '#' id='submit-button' type="submit"><img src="https://files.slack.com/files-pri/TPAN3NU3W-FPUC53H6C/search.png" alt="magni-icon"></button>
+            </form>
+        </div>
+    </div>
+        
+    <div class="main-page">
+        <div class="main-image"></div>
+         <p id="title"> BODY</p>
+         <div class="red-box-1">
+             <div class="red-logo"></div>
+         </div>
+         <div class="red-box-2">
+                <div class="red-logo"></div>
+         </div>   
+    </div>
+
+    <div class="separator"></div>
+
+    <div class="sec-page">
+
+    <div class="carousel-imagem">
+    <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://i.pinimg.com/originals/b6/3b/6b/b63b6ba98210e15feb2768df91b18258.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block container-of-captions">
+                    <p class="description-title">Ski in Switzerland</p>
+                    <p class='descricao-aparece'> > Click here for more info < </p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://cdn.escapismmagazine.com/featured_image/5bdad54de3df3.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block container-of-captions">
+                  <p class="description-title">Snowboard in Switzerland</p>
+                  <p class='descricao-aparece'> > Click here for more info < </p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.france-bike-trips.com/mf_websites/velorizons/uploads/en/circuit/circuit_46/Chamonix-Zermatt-mountain-bike-trip-img4.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block container-of-captions">
+                  <p class="description-title">Ride a bike in the Alps</p>
+                  <p class='descricao-aparece'> > Click here for more info < </p>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+    </div>
+    </div>
+
+      <div class="image-description">
+        <p id="description-1">It has some of the best skiing and snowboarding slopes. <br>
+          <img class='description-image img-fluid'src="https://www.ridestore.com/mag/wp-content/uploads/2019/03/Pistes-768x681.png"><br>
+          This is no secret. Switzerland is home to some of the best slopes in the skiing and snowboarding world. Every ski/snowboard season, thousands flock in the resorts scattered all over the country. Some of these slopes are ranked the best in offering excellent skiing experience and others for their breathtaking views and beauty.
+          If you plan on taking a ski/snowboarding holiday on a budget, there are loads of options to take advantage of in Switzerland.</p>
+        <p id="description-2">Descrição 2</p>
+        <p id="description-3">Descrição 3</p>
+        <p id='close-description'>X</p>
+      </div>
+
+    </div>
+    </main>
+    
+    <footer>
+        <div id="footer">
+            <a id="logo-1" href="#"></a>
+            <a id="logo-2" href="#"></a>
+            <a id="logo-3" href="#"></a>
+        </div>
+    </footer>
+
+    </div>
+    <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+
+              document.getElementById('side-menu').classList.toggle('active');
+            }
+
+            const openSearch = document.getElementById('search-icon');
+            const closeSearch = document.getElementById('search-close-button');
+            const search = document.getElementsByClassName('search')[0];
+            const submitSearch = document.getElementById('submit-button');
+            const hideHeadBar = document.getElementsByClassName('head-bar')[0];
+            const secPage = document.getElementsByClassName('sec-page')[0];
+            const descricaoAparece1 = document.getElementsByClassName("descricao-aparece")[0];
+            const descricaoAparece2 = document.getElementsByClassName("descricao-aparece")[1];
+            const descricaoAparece3 = document.getElementsByClassName("descricao-aparece")[2];
+            const imageDescription = document.getElementsByClassName('image-description')[0];
+            const closeDescription = document.querySelector('#close-description');
+            const description1 = document.querySelector('#description-1');
+            const description2 = document.querySelector('#description-2');
+            const description3 = document.querySelector('#description-3');
+            const prevButton = document.querySelector('.carousel-control-prev');
+            const nextButton = document.querySelector('.carousel-control-next');
+
+            openSearch.addEventListener('click', () => {  
+            search.style.display = 'flex';
+            hideHeadBar.style.display = 'none';
+            })
+
+            closeSearch.addEventListener('click', () => {  
+            search.style.display = 'none';
+            hideHeadBar.style.display = 'flex';
+            })
+
+            submitSearch.addEventListener('click', () => {
+                alert('Go search yourself, you lazy! :) ');
+            })
+
+            descricaoAparece1.addEventListener('click', () => {
+              imageDescription.style.display = 'flex';
+              description1.style.display = 'block';
+              secPage.style.paddingBottom = '320px';
+            })
+
+            descricaoAparece2.addEventListener('click', () => {
+              imageDescription.style.display = 'flex';
+              description2.style.display = 'block';
+              secPage.style.paddingBottom = '100px';
+            })
+
+            descricaoAparece3.addEventListener('click', () => {
+              imageDescription.style.display = 'flex';
+              description3.style.display = 'block';
+              secPage.style.paddingBottom = '100px';
+            })
+
+            closeDescription.addEventListener('click', () => {
+              secPage.style.paddingBottom = '0px';
+              imageDescription.style.display = 'none';
+              description1.style.display = 'none';
+              description2.style.display = 'none';
+              description3.style.display = 'none';
+            })
+
+            prevButton.addEventListener('click', () => {
+              secPage.style.paddingBottom = '0px';
+              imageDescription.style.display = 'none';
+              description1.style.display = 'none';
+              description2.style.display = 'none';
+              description3.style.display = 'none';
+            })
+
+            nextButton.addEventListener('click', () => {
+              secPage.style.paddingBottom = '0px';
+              imageDescription.style.display = 'none';
+              description1.style.display = 'none';
+              description2.style.display = 'none';
+              description3.style.display = 'none';
+            })
+
+            
+      </script>
+</body>
+</html>
