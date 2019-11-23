@@ -199,10 +199,11 @@ body {
 
 .red-logo {
     cursor: pointer;
-    height: 30px;
-    width: 30px;
-    border: 0.5px solid black;
     margin-right: 5px;
+}
+
+.red-logo img {
+    width: 30px;
 }
 
 .red-box-2 {
@@ -260,7 +261,9 @@ body {
 }
 
 #photo1 {
-    background-image: url(https://i.ytimg.com/vi/1BjgBoummtE/maxresdefault.jpg);
+    background-image: url(https://skydiveswitzerland.com/wp-content/uploads/2019/04/skydive-switzerland-fun-jumpers-swiss-flag-flying-1.jpg);
+    background-size: cover;
+    background-position: center;
     height: 25vw;
     border: black 1px solid;
 }
@@ -388,7 +391,8 @@ body {
 
 #logo-1 {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/42x78/883e1ca7fbb9396df31ab62a3cd42b8d/facebook.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     width: 20px;
     height: 4.5vh;
     margin: 10px;
@@ -398,14 +402,11 @@ body {
 #logo-1:hover {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/42x78/150be7b44ad787436ccf3f00e01baaa0/facebook_hover.png) ;
 }
-/*
-#logo-1 img {
-    height: 100%;
-}
-*/
+
 #logo-2 {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/008717ff9d97cf279a5c59df127144b9/linkedin.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     width: 35px;
     height: 4.3vh;
     margin: 10px;
@@ -415,14 +416,11 @@ body {
 #logo-2:hover {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/19405d67dd05366ffcfc377d6c5847eb/linkedin_hover.png);
 }
-/*
-#logo-2 img {
-    height: 100%;
-}
-*/
+
 #logo-3 {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/1e4ec2a950905469f80d49f43fd30099/instagram.png);
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     width: 35px;
     height: 4.3vh;
     margin: 10px;
@@ -432,11 +430,21 @@ body {
 #logo-3:hover {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/241edceaa745d5f51e516510720e1f9f/instagram_hover.png);
 }
-/*
-#logo-3 img {
-    height: 100%;
+
+#logo-4 {
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/twitter.png);
+    background-size: cover;
+    background-position: center;
+    width: 35px;
+    height: 4.3vh;
+    margin: 10px;
+    transition: all 0.5s;
 }
-*/
+
+#logo-4:hover {
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/twitter_hover.png);
+}
+
 @media (max-width: 1270px) {
 
     .photo-row {
