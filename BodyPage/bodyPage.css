@@ -163,14 +163,16 @@ body {
 }
 
 #title{
-    font-size: 60px;
+    font-size: 6rem;
     position: absolute;
-    background-color: transparent;
+    background-color: rgba(0,0,0,0.5);
     display: block;
     top: 30%;
     z-index: 2;
     left: 10%;
     color: white;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 #sub-title {
@@ -279,7 +281,7 @@ body {
     padding: 10px;
     border: 1px solid black;
     z-index: 0;
-    width: 70%;
+    width: 77%;
     border-radius: 10px;
 }
 
@@ -299,6 +301,18 @@ body {
 
 #description-2 {
     display: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+#content-desc2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#content-desc2 p {
+    width: 40%;
 }
 
 #description-3 {

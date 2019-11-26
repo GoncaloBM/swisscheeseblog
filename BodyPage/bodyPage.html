@@ -64,7 +64,7 @@
     -->
     <div class="main-page">
         <div class="main-image"></div>
-         <p id="title"> BODY</p>
+         <p id="title">BODY</p>
          <div class="red-box-1">
              <div class="red-logo">
                <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
@@ -129,9 +129,16 @@
           <img class='description-image img-fluid'src="https://www.ridestore.com/mag/wp-content/uploads/2019/03/Pistes-768x681.png"><br>
           This is no secret. Switzerland is home to some of the best slopes in the skiing and snowboarding world. Every ski/snowboard season, thousands flock in the resorts scattered all over the country. Some of these slopes are ranked the best in offering excellent skiing experience and others for their breathtaking views and beauty.
           If you plan on taking a ski/snowboarding holiday on a budget, there are loads of options to take advantage of in Switzerland.</p>
-        <p id="description-2">Descrição 2</p>
+        <div id="description-2">
+          <p>Tips for snowboarding:</p>
+          <div id="content-desc2">
+            <div id="video-snowboard"><iframe width="500" height="315" src="https://www.youtube.com/embed/wl7sIvMgrqg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+            <p>Spring is probably the best time of year to learn to snowboard. If you are anywhere near the Swiss Alps, it’s time to hit the slopes and the après ski. Moving to Switzerland without any skiing or snowboarding experience is like showing up to a Zumba class you’ve never been to and realizing very quickly everyone else knows the routine.
+          If you are new to the world of snowboarding and find yourself at the top of Gornergrat, taking in the glistening peaks and iconic Matterhorn, while simultaneously having a nervous breakdown, here are some simple snowboarding tips to get you started.</p>
+        </div>
+        </div>
         <p id="description-3">Descrição 3</p>
-        <p id='close-description'>X</p>
+        <button type="button" class="btn btn-outline-danger close-description">Close Section</button>
       </div>
 
     </div>
@@ -159,7 +166,7 @@
             const descricaoAparece2 = document.getElementsByClassName("descricao-aparece")[1];
             const descricaoAparece3 = document.getElementsByClassName("descricao-aparece")[2];
             const imageDescription = document.getElementsByClassName('image-description')[0];
-            const closeDescription = document.querySelector('#close-description');
+            const closeDescription = document.querySelector('.close-description');
             const description1 = document.querySelector('#description-1');
             const description2 = document.querySelector('#description-2');
             const description3 = document.querySelector('#description-3');
@@ -174,8 +181,8 @@
 
             descricaoAparece2.addEventListener('click', () => {
               imageDescription.style.display = 'flex';
-              description2.style.display = 'block';
-              secPage.style.paddingBottom = '100px';
+              description2.style.display = 'flex';
+              secPage.style.paddingBottom = '420px';
             })
 
             descricaoAparece3.addEventListener('click', () => {
