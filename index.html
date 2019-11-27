@@ -68,9 +68,20 @@
                                     </div>
                                 </div>
                                 <div class="red-box-2">
-                                        <p id='question4us'>Do you have a Question?</p> 
                                        <div class="red-logo">
-                                        <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
+                                        <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
+                                        <div id='contact-form'>
+                                            <form action="/action_page.php">
+                                                First name:<br>
+                                                <input type="text" name="firstname" value="Mickey">
+                                                <br>
+                                                Last name:<br>
+                                                <input type="text" name="lastname" value="Mouse">
+                                                <br><br>
+                                                <input type="submit" value="Submit">
+                                              </form> 
+                                              <p id="close-form">X</p>
+                                        </div>
                                        </div>
                                 </div> 
     </div>
@@ -135,6 +146,10 @@
             const search = document.getElementsByClassName('search')[0];
             const submitSearch = document.getElementById('submit-button');
             const hideHeadBar = document.getElementsByClassName('head-bar')[0];
+            const redLogo2 = document.getElementById('red-logo-2');
+            const redBox2 = document.getElementsByClassName('red-box-2')[0];
+            const contactForm = document.getElementById('contact-form');
+            const closeForm = document.getElementById('close-form');
 
             openSearch.addEventListener('click', () => {  
             search.style.display = 'flex';
@@ -148,6 +163,16 @@
 
             submitSearch.addEventListener('click', () => {
                 alert('Go search yourself, you lazy! :) ');
+            })
+
+            redLogo2.addEventListener('click', () => {
+                redBox2.style.width = '400px';
+                redBox2.style.height ='250px';
+            })
+
+            closeForm.addEventListener('click', () => {
+                redBox2.style.width = '60px';
+                redBox2.style.height ='40px';
             })
 
             
