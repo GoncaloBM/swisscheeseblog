@@ -363,7 +363,7 @@ body {
     background-size: cover;
     background-position: center;
     width: 20px;
-    height: 4.5vh;
+    height: 5vh;
     margin: 10px;
     transition: all 0.5s;
 }
@@ -376,8 +376,8 @@ body {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/008717ff9d97cf279a5c59df127144b9/linkedin.png);
     background-size: cover;
     background-position: center;
-    width: 35px;
-    height: 4.3vh;
+    width: 41px;
+    height: 5vh;
     margin: 10px;
     transition: all 0.5s;
 }
@@ -390,8 +390,8 @@ body {
     background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/1e4ec2a950905469f80d49f43fd30099/instagram.png);
     background-size: cover;
     background-position: center;
-    width: 35px;
-    height: 4.3vh;
+    width: 41px;
+    height: 5vh;
     margin: 10px;
     transition: all 0.5s;
 }
@@ -404,8 +404,8 @@ body {
     background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/twitter.png);
     background-size: cover;
     background-position: center;
-    width: 35px;
-    height: 4.3vh;
+    width: 41px;
+    height: 5vh;
     margin: 10px;
     transition: all 0.5s;
 }
