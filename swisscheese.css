@@ -203,6 +203,10 @@ body {
     transition: all 0.5s;
 }
 
+.red-box-1 .red-logo {
+    margin-bottom: 7px;
+}
+
 .red-box-1:hover {
     width: 65px;
 }
@@ -211,6 +215,8 @@ body {
     cursor: pointer;
     margin-top: 5px;
     margin-right: 5px;
+    margin-bottom: 5px;
+    align-self: flex-end;
 }
 
 .red-logo img {
@@ -226,11 +232,11 @@ body {
     z-index: 2;
     display: flex;
     background-color: red;
-    align-items: flex-start;
-    justify-content: flex-end;
+    align-items: flex-end;
     transition: all 0.5s;
     overflow: hidden;
-    
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .red-box-2:hover {
@@ -238,23 +244,46 @@ body {
 }
 
 #contact-form {
-    display: flex;
+    display: none;
     z-index: 3;
     width: 100%;
-    height: 200px;
-    position: absolute;
     background-color: red;
     left: 0%;
     cursor: auto;
-    align-items: flex-start;
-    align-self: center;
-    justify-content: center;
+    align-self: flex-end;
+    justify-content: space-around;
     transition: all 0.5s;
+    flex-direction: column;
+    align-items: center;  
+}
+
+#form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#fname, #femail, #fsub {
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 30px;
+    border-radius: 5px;
+}
+
+#fsubject {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+.button-submit {
+    margin-bottom: 5px;
 }
 
 #close-form {
-    align-self: flex-end;
-    cursor: pointer;
+   margin: 5px; 
 }
 
 .separator {

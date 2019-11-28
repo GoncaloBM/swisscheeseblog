@@ -70,19 +70,17 @@
                                 <div class="red-box-2">
                                        <div class="red-logo">
                                         <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
+                                    </div>
                                         <div id='contact-form'>
-                                            <form action="/action_page.php">
-                                                First name:<br>
-                                                <input type="text" name="firstname" value="Mickey">
-                                                <br>
-                                                Last name:<br>
-                                                <input type="text" name="lastname" value="Mouse">
-                                                <br><br>
-                                                <input type="submit" value="Submit">
-                                              </form> 
-                                              <p id="close-form">X</p>
+                                            <form id='form' action="/action_page.php">
+                                                <input type="text" id="fname" placeholder="Name:">
+                                                <input type="email" id="femail" placeholder="Email:">
+                                                <input type="text" id="fsub" placeholder="Subject:">
+                                                <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
+                                                <input type="submit" value="Submit" class='btn btn-light button-submit'>
+                                            </form> 
+                                            <button id='close-form'type="button" class="btn btn-outline-secondary btn-sm">x</button>
                                         </div>
-                                       </div>
                                 </div> 
     </div>
 
@@ -166,13 +164,15 @@
             })
 
             redLogo2.addEventListener('click', () => {
-                redBox2.style.width = '400px';
-                redBox2.style.height ='250px';
+                redBox2.style.width = '250px';
+                redBox2.style.height ='450px';
+                contactForm.style.display = 'flex';
             })
 
             closeForm.addEventListener('click', () => {
                 redBox2.style.width = '60px';
                 redBox2.style.height ='40px';
+                contactForm.style.display = 'none';
             })
 
             
