@@ -15,13 +15,19 @@
 <body>
     <header class="bHeader">
         <a href="index.html" class="bLogo"></a>
-        <button class="menu__hamburger" onclick="myFunction(this)"><i class="icon-menu">
+        <div class="burger-icon"  onclick="myFunction(this)">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+        </div>
+
+        <!-- <button class="menu__hamburger" onclick="myFunction(this)"><i class="icon-menu">
             <u></u>
             <u></u>
             <u></u>
             </i>
         </button>
-        </a>
+        </a> -->
 
     </header>
 
@@ -66,15 +72,25 @@
         <div class="main-image"></div>
          <p id="title">BODY</p>
          <div class="red-box-1">
+          <div class="red-logo">
+            <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
+          </div>
+      </div>
+      <div class="red-box-2">
              <div class="red-logo">
-               <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
-             </div>
-         </div>
-         <div class="red-box-2">
-                <div class="red-logo">
-                  <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
-                </div>
-         </div>   
+              <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
+          </div>
+              <div id='contact-form'>
+                  <form id='form' action="/action_page.php">
+                      <input type="text" id="fname" placeholder="Name:">
+                      <input type="email" id="femail" placeholder="Email:">
+                      <input type="text" id="fsub" placeholder="Subject:">
+                      <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
+                      <input type="submit" value="Submit" class='btn btn-light button-submit'>
+                  </form> 
+                  <button id='close-form'type="button" class="btn btn-outline-secondary btn-sm">x</button>
+              </div>
+      </div>  
     </div>
 
     <div class="separator"></div>
@@ -172,6 +188,10 @@
             const description3 = document.querySelector('#description-3');
             const prevButton = document.querySelector('.carousel-control-prev');
             const nextButton = document.querySelector('.carousel-control-next');
+            const redLogo2 = document.getElementById('red-logo-2');
+            const redBox2 = document.getElementsByClassName('red-box-2')[0];
+            const contactForm = document.getElementById('contact-form');
+            const closeForm = document.getElementById('close-form');
 
             descricaoAparece1.addEventListener('click', () => {
               imageDescription.style.display = 'flex';
@@ -213,6 +233,18 @@
               description1.style.display = 'none';
               description2.style.display = 'none';
               description3.style.display = 'none';
+            })
+
+            redLogo2.addEventListener('click', () => {
+                redBox2.style.width = '250px';
+                redBox2.style.height ='450px';
+                contactForm.style.display = 'flex';
+            })
+
+            closeForm.addEventListener('click', () => {
+                redBox2.style.width = '60px';
+                redBox2.style.height ='40px';
+                contactForm.style.display = 'none';
             })
 
       </script>
