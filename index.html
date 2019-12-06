@@ -68,10 +68,19 @@
                                     </div>
                                 </div>
                                 <div class="red-box-2">
-                                        <p id='question4us'>Do you have a Question?</p> 
                                        <div class="red-logo">
-                                        <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
-                                       </div>
+                                        <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
+                                    </div>
+                                        <div id='contact-form'>
+                                            <form id='form' action="/action_page.php">
+                                                <input type="text" id="fname" placeholder="Name:">
+                                                <input type="email" id="femail" placeholder="Email:">
+                                                <input type="text" id="fsub" placeholder="Subject:">
+                                                <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
+                                                <input type="submit" value="Submit" class='btn btn-light button-submit'>
+                                            </form> 
+                                            <button id='close-form'type="button" class="btn btn-outline-secondary btn-sm">x</button>
+                                        </div>
                                 </div> 
     </div>
 
@@ -135,6 +144,10 @@
             const search = document.getElementsByClassName('search')[0];
             const submitSearch = document.getElementById('submit-button');
             const hideHeadBar = document.getElementsByClassName('head-bar')[0];
+            const redLogo2 = document.getElementById('red-logo-2');
+            const redBox2 = document.getElementsByClassName('red-box-2')[0];
+            const contactForm = document.getElementById('contact-form');
+            const closeForm = document.getElementById('close-form');
 
             openSearch.addEventListener('click', () => {  
             search.style.display = 'flex';
@@ -148,6 +161,18 @@
 
             submitSearch.addEventListener('click', () => {
                 alert('Go search yourself, you lazy! :) ');
+            })
+
+            redLogo2.addEventListener('click', () => {
+                redBox2.style.width = '250px';
+                redBox2.style.height ='450px';
+                contactForm.style.display = 'flex';
+            })
+
+            closeForm.addEventListener('click', () => {
+                redBox2.style.width = '60px';
+                redBox2.style.height ='40px';
+                contactForm.style.display = 'none';
             })
 
             
