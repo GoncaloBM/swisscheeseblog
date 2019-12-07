@@ -293,7 +293,6 @@ body {
 
 .photostand {
     z-index: 0;
-    /*background-image: url(http://getwallpapers.com/wallpaper/full/2/e/d/1131769-switzerland-wallpaper-1920x1080-screen.jpg);*/
     background-color: white;
     position: relative;
     background-size: cover;
