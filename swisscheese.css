@@ -17,7 +17,6 @@ body {
 #search-icon {
     position: absolute;
     left: 80%;
-    /*vertical-align: middle; */
     background-color: #d3c9d1;
     padding-top: 1%;
     padding-right:0.2%;
@@ -148,7 +147,7 @@ body {
 
 .main-image{
     display: block;
-    background-image: url(https://files.slack.com/files-pri/TPAN3NU3W-FPTS6NG9J/zermatt-2.jpg);
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Landing%20Page/zermatt-2.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center center;
@@ -322,7 +321,7 @@ body {
 }
 
 #photo1 {
-    background-image: url(https://skydiveswitzerland.com/wp-content/uploads/2019/04/skydive-switzerland-fun-jumpers-swiss-flag-flying-1.jpg);
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Landing%20Page/skydive-switzerland-fun-jumpers-swiss-flag-flying-1.jpg);
     background-size: cover;
     background-position: center;
     height: 25vw;
@@ -464,7 +463,7 @@ body {
 }
 
 #logo-1 {
-    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/42x78/883e1ca7fbb9396df31ab62a3cd42b8d/facebook.png);
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/facebook.png);
     background-size: cover;
     background-position: center;
     width: 20px;
@@ -474,25 +473,26 @@ body {
 }
 
 #logo-1:hover {
-    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/42x78/150be7b44ad787436ccf3f00e01baaa0/facebook_hover.png) ;
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/facebook_hover.png) ;
 }
 
 #logo-2 {
-    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/008717ff9d97cf279a5c59df127144b9/linkedin.png);
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/linkedin.png);
     background-size: cover;
     background-position: center;
     width: 41px;
     height: 5vh;
+    max-height: 50px;
     margin: 10px;
     transition: all 0.5s;
 }
 
 #logo-2:hover {
-    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/19405d67dd05366ffcfc377d6c5847eb/linkedin_hover.png);
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/linkedin_hover.png);
 }
 
 #logo-3 {
-    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/1e4ec2a950905469f80d49f43fd30099/instagram.png);
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/instagram.png);
     background-size: cover;
     background-position: center;
     width: 41px;
@@ -502,11 +502,11 @@ body {
 }
 
 #logo-3:hover {
-    background-image: url(https://trello-attachments.s3.amazonaws.com/5da19c044024da38a58e8b14/78x78/241edceaa745d5f51e516510720e1f9f/instagram_hover.png);
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/instagram_hover.png);
 }
 
 #logo-4 {
-    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/twitter.png);
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/twitter.png);
     background-size: cover;
     background-position: center;
     width: 41px;
@@ -516,7 +516,7 @@ body {
 }
 
 #logo-4:hover {
-    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/twitter_hover.png);
+    background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/twitter_hover.png);
 }
 
 @media (max-width: 1270px) {
