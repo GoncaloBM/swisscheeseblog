@@ -64,7 +64,7 @@
         </div>
                             <div class="red-box-1">
                                     <div class="red-logo">
-                                      <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
+                                      <img id='red-logo-1'src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
                                     </div>
                                 </div>
                                 <div class="red-box-2">
@@ -144,7 +144,9 @@
             const search = document.getElementsByClassName('search')[0];
             const submitSearch = document.getElementById('submit-button');
             const hideHeadBar = document.getElementsByClassName('head-bar')[0];
+            const redLogo1 = document.getElementById('red-logo-1');
             const redLogo2 = document.getElementById('red-logo-2');
+            const redBox1 = document.getElementsByClassName('red-box-1')[0];
             const redBox2 = document.getElementsByClassName('red-box-2')[0];
             const contactForm = document.getElementById('contact-form');
             const closeForm = document.getElementById('close-form');
@@ -163,6 +165,14 @@
 
             submitSearch.addEventListener('click', () => {
                 alert('Go search yourself, you lazy! :) ');
+            })
+
+            redLogo1.addEventListener('click', () => {
+                redBox1.style.width = '250px';
+                redBox1.style.height ='460px';
+                redBox1.style.backgroundColor ='rgb(240, 240, 240)';
+                redBox1.style.borderTop ='red 1px solid'
+                redBox1.style.borderRight ='red 1px solid'
             })
 
             redLogo2.addEventListener('click', () => {
