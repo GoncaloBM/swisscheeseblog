@@ -38,7 +38,7 @@
 
     <main>
     <div class="head-bar">
-        <a id="logo" href="index.html"> <img id= 'logo-swiz' src='https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Logo.png' alt="logo-icon" </a> 
+        <a id="logo" href="index.html"> <img id= 'logo-swiz' src='https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Logo.png' alt="logo-icon"> </a> 
         <a id="search-icon" href="#"> <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Landing%20Page/search.png" alt="magni-icon"></a>
     </div>
 
@@ -151,11 +151,13 @@
 
             openSearch.addEventListener('click', () => {  
             search.style.display = 'flex';
+            search.style.opacity = '1';
             hideHeadBar.style.display = 'none';
             })
 
             closeSearch.addEventListener('click', () => {  
             search.style.display = 'none';
+            search.style.opacity = '0';
             hideHeadBar.style.display = 'flex';
             })
 
