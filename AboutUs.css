@@ -293,6 +293,7 @@ body {
     background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/facebook.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 20px;
     height: 5vh;
     margin: 10px;
@@ -305,8 +306,9 @@ body {
 
 #logo-2 {
     background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/linkedin.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     width: 41px;
     height: 5vh;
     max-height: 50px;
@@ -320,8 +322,9 @@ body {
 
 #logo-3 {
     background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/instagram.png);
-    background-size: cover;
+    background-size: contain;
     background-position: center;
+    background-repeat: no-repeat;
     width: 41px;
     height: 5vh;
     margin: 10px;
@@ -336,6 +339,7 @@ body {
     background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Footer/twitter.png);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
     width: 41px;
     height: 5vh;
     margin: 10px;
