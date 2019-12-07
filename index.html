@@ -16,12 +16,12 @@
     </header>
 
     <navbar>
-    <div class="fancynav">
+    <!-- <div class="fancynav">
             <div class="burger-icon"  onclick="myFunction(this)">
                     <div class="bar-1"></div>
                     <div class="bar-2"></div>
                     <div class="bar-3"></div>
-            </div>
+            </div> -->
     
     </div>
     <div id="side-menu">
@@ -37,10 +37,20 @@
     </navbar>
 
     <main>
-    <div class="head-bar">
+    
+            <header class="head-bar">
+                    <a href="index.html" class="bLogo"></a>
+                    <div class="menu__hamburger"  onclick="myFunction(this)">
+                      <div class="bar-1"></div>
+                      <div class="bar-2"></div>
+                      <div class="bar-3"></div>
+                    </div>
+                </header>
+    
+        <!-- <div class="head-bar">
         <a id="logo" href="index.html"> <img id= 'logo-swiz' src='https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Logo.png' alt="logo-icon"> </a> 
         <a id="search-icon" href="#"> <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Landing%20Page/search.png" alt="magni-icon"></a>
-    </div>
+    </div> -->
 
     <div class="search">
         <a id='search-close-button' href="#">X</a>
@@ -151,21 +161,21 @@
             const contactForm = document.getElementById('contact-form');
             const closeForm = document.getElementById('close-form');
 
-            openSearch.addEventListener('click', () => {  
-            search.style.display = 'flex';
-            search.style.opacity = '1';
-            hideHeadBar.style.display = 'none';
-            })
+            // openSearch.addEventListener('click', () => {  
+            // search.style.display = 'flex';
+            // search.style.opacity = '1';
+            // hideHeadBar.style.display = 'none';
+            // })
 
-            closeSearch.addEventListener('click', () => {  
-            search.style.display = 'none';
-            search.style.opacity = '0';
-            hideHeadBar.style.display = 'flex';
-            })
+            // closeSearch.addEventListener('click', () => {  
+            // search.style.display = 'none';
+            // search.style.opacity = '0';
+            // hideHeadBar.style.display = 'flex';
+            // })
 
-            submitSearch.addEventListener('click', () => {
-                alert('Go search yourself, you lazy! :) ');
-            })
+            // submitSearch.addEventListener('click', () => {
+            //     alert('Go search yourself, you lazy! :) ');
+            // })
 
             redLogo1.addEventListener('click', () => {
                 redBox1.style.width = '250px';
@@ -192,7 +202,7 @@
                 contactForm.style.display = 'none';
                 redBox2.style.backgroundColor ='red';
                 redBox2.style.borderTop ='';
-                redBox2.style.borderRight =''
+                redBox2.style.borderRight ='';
                 contactForm.style.backgroundColor ='red';
                 contactForm.style.borderBottom ='';
             })
