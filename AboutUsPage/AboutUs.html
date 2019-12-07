@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="AboutUs.css">
+    <title>Swiss Cheese</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header class="bHeader">
+        <a href="index.html" class="bLogo"></a>
+        <div class="burger-icon"  onclick="myFunction(this)">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+        </div>
+    </header>
+
+    <navbar>
+
+    <div id="side-menu">
+        <ul>
+            <li class="side-menu-item">Mind</li>
+            <li class="side-menu-item">Body</li>
+            <li class="side-menu-item">Soul</li>
+            <li class="side-menu-item xclusive-rotate"><img id='x-icon' src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/main.png">clusive</li>
+            <li class="side-menu-item">About us</li>
+        </ul>
+    </div>
+
+    </navbar>
+
+    <main>
+    <div class="main-page">
+        <div class="main-image"></div>
+         <p id="title">BODY</p>
+         <div class="red-box-1">
+          <div class="red-logo">
+            <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
+          </div>
+      </div>
+      <div class="red-box-2">
+             <div class="red-logo">
+              <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
+          </div>
+              <div id='contact-form'>
+                  <form id='form' action="/action_page.php">
+                      <input type="text" id="fname" placeholder="Name:">
+                      <input type="email" id="femail" placeholder="Email:">
+                      <input type="text" id="fsub" placeholder="Subject:">
+                      <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
+                      <input type="submit" value="Submit" class='btn btn-light button-submit'>
+                  </form> 
+                  <button id='close-form'type="button" class="btn btn-outline-secondary btn-sm">x</button>
+              </div>
+      </div>  
+    </div>
+
+    <div class="separator"></div>
+
+
+    </main>
+    
+    <footer>
+        <div id="footer">
+            <a id="logo-1" href="#"></a>
+            <a id="logo-2" href="#"></a>
+            <a id="logo-3" href="#"></a>
+            <a id='logo-4' href="#"></a>
+        </div>
+    </footer>
+
+    </div>
+    <script>
+      function myFunction(x) {
+              x.classList.toggle("change");
+
+              document.getElementById('side-menu').classList.toggle('active');
+            }
+            const hideHeadBar = document.getElementsByClassName('head-bar')[0];
+            const redLogo2 = document.getElementById('red-logo-2');
+            const redBox2 = document.getElementsByClassName('red-box-2')[0];
+            const contactForm = document.getElementById('contact-form');
+            const closeForm = document.getElementById('close-form');
+
+            redLogo2.addEventListener('click', () => {
+                redBox2.style.width = '250px';
+                redBox2.style.height ='450px';
+                contactForm.style.display = 'flex';
+            })
+
+            closeForm.addEventListener('click', () => {
+                redBox2.style.width = '60px';
+                redBox2.style.height ='40px';
+                contactForm.style.display = 'none';
+            })
+
+      </script>
+</body>
+</html>
