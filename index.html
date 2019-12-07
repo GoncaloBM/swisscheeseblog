@@ -165,14 +165,24 @@
 
             redLogo2.addEventListener('click', () => {
                 redBox2.style.width = '250px';
-                redBox2.style.height ='450px';
+                redBox2.style.height ='460px';
+                redBox2.style.backgroundColor ='rgb(240, 240, 240)';
+                redBox2.style.borderTop ='red 1px solid'
+                redBox2.style.borderRight ='red 1px solid'
+                contactForm.style.backgroundColor ='rgb(240, 240, 240)';
                 contactForm.style.display = 'flex';
+                contactForm.style.borderBottom ='red 1px solid'
             })
 
             closeForm.addEventListener('click', () => {
                 redBox2.style.width = '60px';
                 redBox2.style.height ='40px';
                 contactForm.style.display = 'none';
+                redBox2.style.backgroundColor ='red';
+                redBox2.style.borderTop ='';
+                redBox2.style.borderRight =''
+                contactForm.style.backgroundColor ='red';
+                contactForm.style.borderBottom ='';
             })
 
             

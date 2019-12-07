@@ -45,7 +45,7 @@ body {
     transition: 0.5s;
 }
 
- .change .bar-1 {
+.change .bar-1 {
     transform: rotate(-45deg) translate(0px, 9px);
 }
   
@@ -53,30 +53,6 @@ body {
   
 .change .bar-3 {
     transform: rotate(45deg) translate(0px, -9px);
-}
-
-.head-bar {
-    width: 100%;
-    height: 60px;
-    z-index: 2;
-    background-color: #f6f6f6;
-    display: flex;
-    align-items: center;
-    position: absolute;
-}
-
-#search-icon {
-    position: absolute;
-    left: 80%;
-    /*vertical-align: middle; */
-    background-color: #d3c9d1;
-    padding-top: 1%;
-    padding-right:0.2%;
-    padding-left: 0.2%;
-    padding-bottom: 0.1%;
-    border-bottom-left-radius: 5%;
-    border-bottom-right-radius: 5%;
-    align-self: flex-start;
 }
 
 #logo {
@@ -88,65 +64,6 @@ body {
     height: 50px;
 }
 
-.search {
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    z-index: 30;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    display: none;
-    transition: all 0.5s;
-}
-
-#search-close-button {
-    position: absolute;
-    color: white;
-    top: 5%;
-    left: 95%;
-    font-size: 2rem;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-.search-container {
-    width: 40%;
-    /* left: 30%;
-    top: 50%; */
-    vertical-align: middle;
-    position: absolute;
-    line-height: 3rem;
-}
-
-#search-input {
-    background-color: transparent;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    width: 80%;
-    font-size: 2rem;
-    color: white;
-}
-
-#submit-button {
-    width: 10%;
-    background-color: transparent;
-    border: none;
-}
-
-.fancynav {
-    display: flex;
-    width: 72px;
-    height: 100vh;
-    top: 0;
-    right: 0;
-    position: fixed;
-    z-index: 20;
-    background-color:#303030;
-    opacity: 1;
-    align-items: center;
-}
 
 #side-menu {
     position: fixed;
@@ -189,22 +106,21 @@ body {
 }
 
 .main-page {
-    /*
-    width: calc(100% - 72px);
-    */
-
+    display: flex;
     width: 100%;
+
 }
 
 .main-image{
-    display: block;
-    background-image: url(https://skydiveswitzerland.com/wp-content/uploads/2019/04/skydive-switzerland-fun-jumpers-swiss-flag-flying-1.jpg);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
     height: 100vh;
-    background-size: cover;
-    background-position: center center;
     margin: 0;
     position: relative;
-    filter: grayscale(90%);
 
     /* parallax efect */
 
@@ -213,27 +129,50 @@ body {
 }
 
 #title{
-    font-size: 6rem;
-    position: absolute;
-    background-color: rgba(0,0,0,0.5);
-    display: block;
-    top: 30%;
+    font-size: 3rem;
+
     z-index: 2;
     left: 10%;
-    color: white;
-    padding: 10px;
-    border-radius: 10px;
+    color: black;
 }
 
-#sub-title {
-    font-size: 20px;
-    position: absolute;
-    background-color: transparent;
-    display: block;
-    left: 10%;
-    color: white;
-    top: 50%;
+.container-of-photos {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.photo-of-us {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.photo {
+    width: 70%;
+    height: 70%;
+    border: solid 1px black;
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#goncalo {
+    background-image: url(https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png);
+}
+
+#map {
+    width: 80%;
+    height: 40vh;
+    border: 5px black solid;
+}
+
 
 .red-box-1 {
     position: fixed;
@@ -339,92 +278,9 @@ body {
     height: 1px;
 }
 
-.sec-page {
-    /*width: calc(100% - 72px);*/
-    width: 100%;
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    position: relative;
-    padding-bottom: 0px;
-    margin-bottom: 40px;
-    transition: padding-bottom 0.2s linear;
-}
-
-.carousel-caption {
-    display: flex;
-    align-items: center;
-}
-
- .container-of-captions {
-    background-color:rgba(0,0,0,0.5);
-    border-radius: 5px;
-}
-
-.description-title {
-    font-size: 2rem;
-}
-
-.descricao-aparece {
-    cursor: pointer;
-}
-
-.carousel-imagem {
-    z-index: 1;
-}
-
-.image-description {
-    display: none;
-    position: absolute;
-    bottom: 0%;
-    align-items: center;
-    flex-direction: column;
-    padding: 10px;
-    border: 1px solid black;
-    z-index: 0;
-    width: 77%;
-    border-radius: 10px;
-}
-
-.description-image {
-    max-height: 100px;
-    margin: 10px;
-}
-
-#close-description {
-    cursor: pointer;
-}
-
-#description-1 {
-    display: none;
-    text-align: center;
-}
-
-#description-2 {
-    display: none;
-    align-items: center;
-    flex-direction: column;
-}
-
-#content-desc2 {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#content-desc2 p {
-    width: 40%;
-}
-
-#description-3 {
-    display: none;
-}
-
-
 #footer {
     position: absolute;
-    width: 100%;
+    width: 95%;
     height: 10vh;
     z-index: 2;
     background-color: #f6f6f6;
@@ -453,7 +309,6 @@ body {
     background-position: center;
     width: 41px;
     height: 5vh;
-    max-height: 50px;
     margin: 10px;
     transition: all 0.5s;
 }
