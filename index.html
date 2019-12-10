@@ -10,20 +10,7 @@
 
 </head>
 <body>
-    <header>
-        
-        </div>
-    </header>
-
     <navbar>
-    <!-- <div class="fancynav">
-            <div class="burger-icon"  onclick="myFunction(this)">
-                    <div class="bar-1"></div>
-                    <div class="bar-2"></div>
-                    <div class="bar-3"></div>
-            </div> -->
-    
-    </div>
     <div id="side-menu">
         <ul>
             <li class="side-menu-item">Mind</li>
@@ -33,11 +20,9 @@
             <li class="side-menu-item"><a href='AboutUs.html' style="text-decoration:none; color: inherit;">About us</a></li>
         </ul>
     </div>
-
     </navbar>
 
     <main>
-    
         <!-- Victoria this is here is to copy -->
 
             <header class="head-bar">
@@ -64,16 +49,52 @@
     <div class="main-page">
         <div class="main-image"></div>
         <div class="container-opac">
-         <p id="title"> GET TO KNOW SWITZERLAND</p>
-         <p id="sub-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br>
-                            Eu augue ut lectus arcu bibendum. Non quam lacus suspendisse faucibus. Phasellus egestas tellus rutrum tellus pellentesque. <br>
-                            Amet tellus cras adipiscing enim eu. Id volutpat lacus laoreet non curabitur. Amet nulla facilisi morbi tempus iaculis urna. <br>
-                            Convallis aenean et tortor at. Ut etiam sit amet nisl purus in mollis. Augue eget arcu dictum varius duis at consectetur lorem. <br>
-                            Convallis tellus id interdum velit laoreet. Tortor id aliquet lectus proin nibh.</p>
+         <p id="title">GET TO KNOW SWITZERLAND</p>
+         <p id="sub-title">Beauty in the heart of Europe_</p>
         </div>
                             <div class="red-box-1">
                                     <div class="red-logo">
                                       <img id='red-logo-1'src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
+                                    </div>
+                                    <div id='newsfeed'>
+                                        <div id="comment-area">
+                                            <textarea id='textarea' rows="3"></textarea>
+                                            <p id="comment-button">Comment</p>
+                                        </div>
+                                        <div class="comment">
+                                            <div class="comment-photo" id='comment-photo-1'></div>
+                                            <div class="comment-info">
+                                                <div class="comment-title">
+                                                    <div class="comment-name">Gonçalo</div>
+                                                    <div class="comment-time">1 hour Ago</div>
+                                                </div>
+                                                <div class="comment-content">Great Blog! 
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="comment">
+                                                <div class="comment-photo" id='comment-photo-2'></div>
+                                                <div class="comment-info">
+                                                    <div class="comment-title">
+                                                        <div class="comment-name">Dhaenerys</div>
+                                                        <div class="comment-time"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="comment">
+                                                    <div class="comment-photo" id='comment-photo-3'></div>
+                                                    <div class="comment-info">
+                                                        <div class="comment-title">
+                                                            <div class="comment-name"></div>
+                                                            <div class="comment-time"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                        <p id="comment-close">x</p>
+
                                     </div>
                                 </div>
                                 <div class="red-box-2">
@@ -158,7 +179,16 @@
             const redBox1 = document.getElementsByClassName('red-box-1')[0];
             const redBox2 = document.getElementsByClassName('red-box-2')[0];
             const contactForm = document.getElementById('contact-form');
+            const newsfeed = document.getElementById('newsfeed');
+            const closeComment = document.getElementById('comment-close');
             const closeForm = document.getElementById('close-form');
+            const title = document.querySelector('.container-opac');
+            const mq = window.matchMedia( "(max-width: 750px)" );
+
+            window.addEventListener('load', () => {
+                title.style.top = ('30%');
+                title.style.opacity = ('1');
+            })
 
             // openSearch.addEventListener('click', () => {  
             // search.style.display = 'flex';
@@ -177,11 +207,31 @@
             // })
 
             redLogo1.addEventListener('click', () => {
-                redBox1.style.width = '250px';
-                redBox1.style.height ='460px';
+
+                if (window.matchMedia("(max-width: 750px)").matches) {
+                    redBox1.style.width = '60%';
+                } else {
+                    redBox1.style.width = '40%';
+                }
+                redBox1.style.height ='500px';
                 redBox1.style.backgroundColor ='rgb(240, 240, 240)';
-                redBox1.style.borderTop ='red 1px solid'
-                redBox1.style.borderRight ='red 1px solid'
+                redBox1.style.borderTop ='red 2px solid';
+                redBox1.style.borderRight ='red 2px solid';
+                newsfeed.style.display = 'flex';
+                newsfeed.style.left = '0%';
+                newsfeed.style.borderBottom ='red 2px solid';
+                newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
+            })
+
+            closeComment.addEventListener('click', () => {
+                redBox1.style.width = '60px';
+                redBox1.style.height ='40px';
+                newsfeed.style.display = 'none';
+                redBox1.style.backgroundColor ='red';
+                redBox1.style.borderTop ='';
+                redBox1.style.borderRight ='';
+                newsfeed.style.backgroundColor ='red';
+                newsfeed.style.borderBottom ='';
             })
 
             redLogo2.addEventListener('click', () => {

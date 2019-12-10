@@ -151,11 +151,13 @@ body {
 }
 
 #title{
+    position: absolute;
     font-size: 3rem;
-
     z-index: 2;
-    left: 10%;
     color: black;
+    top: 20%;
+    opacity: 0;
+    transition: all  1s;
 }
 
 .container-of-photos {

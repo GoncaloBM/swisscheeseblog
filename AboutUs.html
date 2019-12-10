@@ -13,6 +13,7 @@
 
 </head>
 <body>
+    
     <!-- Victoria this here is to copy from here  -->
 
         <header class="head-bar">
@@ -41,7 +42,6 @@
     </navbar>
 
     <main>
-    <div class="main-page">
         <div class="main-image">
             <p id="title">ABOUT US</p>
             <div class="container-of-photos">
@@ -109,6 +109,19 @@
             const redBox2 = document.getElementsByClassName('red-box-2')[0];
             const contactForm = document.getElementById('contact-form');
             const closeForm = document.getElementById('close-form');
+            const title = document.getElementById('title');
+            const photos = document.querySelector('.container-of-photos');
+            const map = document.querySelector('#map');
+
+            function titleOnLoad () {
+                title.style.top = ('8%');
+                title.style.opacity = ('1');
+            };
+
+
+            window.addEventListener('load', () => {
+                titleOnLoad();
+            })
 
             redLogo2.addEventListener('click', () => {
                 redBox2.style.width = '250px';
