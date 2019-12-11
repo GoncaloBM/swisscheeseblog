@@ -58,8 +58,8 @@
                                     </div>
                                     <div id='newsfeed'>
                                         <div id="comment-area">
-                                            <textarea id='textarea' rows="3"></textarea>
-                                            <p id="comment-button">Comment</p>
+                                            <textarea id='textarea'></textarea>
+                                            <p id='comment-button' class="btn btn-light button-submit">Comment</p>
                                         </div>
                                         <div class="comment">
                                             <div class="comment-photo" id='comment-photo-1'></div>
@@ -92,8 +92,7 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
-                                        <p id="comment-close">x</p>
+                                        <div id='comment-close' class='btn btn-light button-submit'>X</div>
 
                                     </div>
                                 </div>
@@ -107,9 +106,9 @@
                                                 <input type="email" id="femail" placeholder="Email:">
                                                 <input type="text" id="fsub" placeholder="Subject:">
                                                 <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
-                                                <input type="submit" value="Submit" class='btn btn-light button-submit'>
+                                                <div class='btn btn-light button-submit'>Submit</div>
                                             </form> 
-                                            <button id='close-form'type="button" class="btn btn-outline-secondary btn-sm">x</button>
+                                            <div id='close-form' class="btn btn-light button-submit">x</div>
                                         </div>
                                 </div> 
     </div>
@@ -178,12 +177,12 @@
             const redLogo2 = document.getElementById('red-logo-2');
             const redBox1 = document.getElementsByClassName('red-box-1')[0];
             const redBox2 = document.getElementsByClassName('red-box-2')[0];
+            const formSubject = document.getElementById('fsubject');
             const contactForm = document.getElementById('contact-form');
             const newsfeed = document.getElementById('newsfeed');
             const closeComment = document.getElementById('comment-close');
             const closeForm = document.getElementById('close-form');
             const title = document.querySelector('.container-opac');
-            const mq = window.matchMedia( "(max-width: 750px)" );
 
             window.addEventListener('load', () => {
                 title.style.top = ('30%');
@@ -209,11 +208,16 @@
             redLogo1.addEventListener('click', () => {
 
                 if (window.matchMedia("(max-width: 750px)").matches) {
-                    redBox1.style.width = '60%';
+                    redBox1.style.width = '100%';
                 } else {
                     redBox1.style.width = '40%';
                 }
-                redBox1.style.height ='500px';
+
+                if (window.matchMedia("(max-height: 600px)").matches) {
+                    redBox1.style.height ='450px';
+                } else {
+                    redBox1.style.height ='500px';
+                }
                 redBox1.style.backgroundColor ='rgb(240, 240, 240)';
                 redBox1.style.borderTop ='red 2px solid';
                 redBox1.style.borderRight ='red 2px solid';
@@ -236,7 +240,13 @@
 
             redLogo2.addEventListener('click', () => {
                 redBox2.style.width = '250px';
-                redBox2.style.height ='460px';
+
+                if (window.matchMedia("(max-height: 600px)").matches) {
+                    redBox2.style.height ='400px';
+                    formSubject.style.height = '125px';
+                } else {
+                    redBox2.style.height ='460px';
+                }
                 redBox2.style.backgroundColor ='rgb(240, 240, 240)';
                 redBox2.style.borderTop ='red 1px solid'
                 redBox2.style.borderRight ='red 1px solid'

@@ -60,26 +60,65 @@
             </div>
             <iframe id='map' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d778.1733524217152!2d-9.146518170785393!3d38.724847445000144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19339e43d5d82f%3A0xf15ee6ad086fad6b!2sWild%20Code%20School%20Lisbon%20-%20Web%20development%20and%20Data%20training!5e0!3m2!1spt-PT!2spt!4v1575716100280!5m2!1spt-PT!2spt" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
         </div>
-         <div class="red-box-1">
-          <div class="red-logo">
-            <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
-          </div>
-      </div>
+        <div class="red-box-1">
+                <div class="red-logo">
+                  <img id='red-logo-1'src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
+                </div>
+                <div id='newsfeed'>
+                    <div id="comment-area">
+                        <textarea id='textarea'></textarea>
+                        <p id='comment-button' class="btn btn-light button-submit">Comment</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-photo" id='comment-photo-1'></div>
+                        <div class="comment-info">
+                            <div class="comment-title">
+                                <div class="comment-name">Gonçalo</div>
+                                <div class="comment-time">1 hour Ago</div>
+                            </div>
+                            <div class="comment-content">Great Blog! 
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="comment">
+                            <div class="comment-photo" id='comment-photo-2'></div>
+                            <div class="comment-info">
+                                <div class="comment-title">
+                                    <div class="comment-name">Dhaenerys</div>
+                                    <div class="comment-time"></div>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="comment">
+                                <div class="comment-photo" id='comment-photo-3'></div>
+                                <div class="comment-info">
+                                    <div class="comment-title">
+                                        <div class="comment-name"></div>
+                                        <div class="comment-time"></div>
+                                    </div>
+                                </div>
+                            </div>
+                    <div id='comment-close' class='btn btn-light button-submit'>X</div>
+    
+                </div>
+            </div>
       <div class="red-box-2">
-             <div class="red-logo">
-              <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
-          </div>
-              <div id='contact-form'>
-                  <form id='form' action="/action_page.php">
-                      <input type="text" id="fname" placeholder="Name:">
-                      <input type="email" id="femail" placeholder="Email:">
-                      <input type="text" id="fsub" placeholder="Subject:">
-                      <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
-                      <input type="submit" value="Submit" class='btn btn-light button-submit'>
-                  </form> 
-                  <button id='close-form'type="button" class="btn btn-outline-secondary btn-sm">x</button>
-              </div>
-      </div>  
+            <div class="red-logo">
+             <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
+         </div>
+         <div id='contact-form'>
+             <form id='form' action="/action_page.php">
+                 <input type="text" id="fname" placeholder="Name:">
+                 <input type="email" id="femail" placeholder="Email:">
+                 <input type="text" id="fsub" placeholder="Subject:">
+                 <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
+                 <div class='btn btn-light button-submit'>Submit</div>
+             </form> 
+             <div id='close-form' class="btn btn-light button-submit">x</div>
+         </div>
+     </div>   
     </div>
 
     <div class="separator"></div>
@@ -105,13 +144,17 @@
             }
 
             const hideHeadBar = document.getElementsByClassName('head-bar')[0];
+            const redLogo1 = document.getElementById('red-logo-1');
             const redLogo2 = document.getElementById('red-logo-2');
+            const redBox1 = document.getElementsByClassName('red-box-1')[0];
             const redBox2 = document.getElementsByClassName('red-box-2')[0];
             const contactForm = document.getElementById('contact-form');
             const closeForm = document.getElementById('close-form');
             const title = document.getElementById('title');
             const photos = document.querySelector('.container-of-photos');
             const map = document.querySelector('#map');
+            const closeComment = document.getElementById('comment-close');
+            const newsfeed = document.getElementById('newsfeed');
 
             function titleOnLoad () {
                 title.style.top = ('8%');
@@ -123,9 +166,36 @@
                 titleOnLoad();
             })
 
+            redLogo1.addEventListener('click', () => {
+
+if (window.matchMedia("(max-width: 750px)").matches) {
+    redBox1.style.width = '100%';
+} else {
+    redBox1.style.width = '40%';
+}
+
+if (window.matchMedia("(max-height: 600px)").matches) {
+    redBox1.style.height ='450px';
+} else {
+    redBox1.style.height ='500px';
+}
+redBox1.style.backgroundColor ='rgb(240, 240, 240)';
+redBox1.style.borderTop ='red 2px solid';
+redBox1.style.borderRight ='red 2px solid';
+newsfeed.style.display = 'flex';
+newsfeed.style.left = '0%';
+newsfeed.style.borderBottom ='red 2px solid';
+newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
+})
+
             redLogo2.addEventListener('click', () => {
                 redBox2.style.width = '250px';
-                redBox2.style.height ='460px';
+                if (window.matchMedia("(max-height: 600px)").matches) {
+                    redBox2.style.height ='400px';
+                    formSubject.style.height = '125px';
+                } else {
+                    redBox2.style.height ='460px';
+                }
                 redBox2.style.backgroundColor ='rgb(240, 240, 240)';
                 redBox2.style.borderTop ='red 1px solid'
                 redBox2.style.borderRight ='red 1px solid'
@@ -143,6 +213,17 @@
                 redBox2.style.borderRight =''
                 contactForm.style.backgroundColor ='red';
                 contactForm.style.borderBottom ='';
+            })
+
+            closeComment.addEventListener('click', () => {
+                redBox1.style.width = '60px';
+                redBox1.style.height ='40px';
+                newsfeed.style.display = 'none';
+                redBox1.style.backgroundColor ='red';
+                redBox1.style.borderTop ='';
+                redBox1.style.borderRight ='';
+                newsfeed.style.backgroundColor ='red';
+                newsfeed.style.borderBottom ='';
             })
 
       </script>

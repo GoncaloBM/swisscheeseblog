@@ -49,24 +49,63 @@
         <div class="main-image"></div>
          <p id="title">BODY</p>
          <div class="red-box-1">
-          <div class="red-logo">
-            <img src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
-          </div>
-      </div>
+            <div class="red-logo">
+              <img id='red-logo-1'src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
+            </div>
+            <div id='newsfeed'>
+                <div id="comment-area">
+                    <textarea id='textarea'></textarea>
+                    <p id='comment-button' class="btn btn-light button-submit">Comment</p>
+                </div>
+                <div class="comment">
+                    <div class="comment-photo" id='comment-photo-1'></div>
+                    <div class="comment-info">
+                        <div class="comment-title">
+                            <div class="comment-name">Gonçalo</div>
+                            <div class="comment-time">1 hour Ago</div>
+                        </div>
+                        <div class="comment-content">Great Blog! 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment">
+                        <div class="comment-photo" id='comment-photo-2'></div>
+                        <div class="comment-info">
+                            <div class="comment-title">
+                                <div class="comment-name">Dhaenerys</div>
+                                <div class="comment-time"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="comment">
+                            <div class="comment-photo" id='comment-photo-3'></div>
+                            <div class="comment-info">
+                                <div class="comment-title">
+                                    <div class="comment-name"></div>
+                                    <div class="comment-time"></div>
+                                </div>
+                            </div>
+                        </div>
+                <div id='comment-close' class='btn btn-light button-submit'>X</div>
+
+            </div>
+        </div>
       <div class="red-box-2">
              <div class="red-logo">
               <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
           </div>
-              <div id='contact-form'>
-                  <form id='form' action="/action_page.php">
-                      <input type="text" id="fname" placeholder="Name:">
-                      <input type="email" id="femail" placeholder="Email:">
-                      <input type="text" id="fsub" placeholder="Subject:">
-                      <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
-                      <input type="submit" value="Submit" class='btn btn-light button-submit'>
-                  </form> 
-                  <button id='close-form'type="button" class="btn btn-outline-secondary btn-sm">x</button>
-              </div>
+          <div id='contact-form'>
+              <form id='form' action="/action_page.php">
+                  <input type="text" id="fname" placeholder="Name:">
+                  <input type="email" id="femail" placeholder="Email:">
+                  <input type="text" id="fsub" placeholder="Subject:">
+                  <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
+                  <div class='btn btn-light button-submit'>Submit</div>
+              </form> 
+              <div id='close-form' class="btn btn-light button-submit">x</div>
+          </div>
       </div>  
     </div>
 
@@ -166,11 +205,37 @@
             const description3 = document.querySelector('#description-3');
             const prevButton = document.querySelector('.carousel-control-prev');
             const nextButton = document.querySelector('.carousel-control-next');
+            const redLogo1 = document.getElementById('red-logo-1');
             const redLogo2 = document.getElementById('red-logo-2');
+            const redBox1 = document.getElementsByClassName('red-box-1')[0];
             const redBox2 = document.getElementsByClassName('red-box-2')[0];
             const contactForm = document.getElementById('contact-form');
             const closeForm = document.getElementById('close-form');
+            const closeComment = document.getElementById('comment-close');
+            const newsfeed = document.getElementById('newsfeed');
 
+            redLogo1.addEventListener('click', () => {
+
+if (window.matchMedia("(max-width: 750px)").matches) {
+    redBox1.style.width = '100%';
+} else {
+    redBox1.style.width = '40%';
+}
+
+if (window.matchMedia("(max-height: 600px)").matches) {
+    redBox1.style.height ='450px';
+} else {
+    redBox1.style.height ='500px';
+}
+redBox1.style.backgroundColor ='rgb(240, 240, 240)';
+redBox1.style.borderTop ='red 2px solid';
+redBox1.style.borderRight ='red 2px solid';
+newsfeed.style.display = 'flex';
+newsfeed.style.left = '0%';
+newsfeed.style.borderBottom ='red 2px solid';
+newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
+})
+            
             descricaoAparece1.addEventListener('click', () => {
               imageDescription.style.display = 'flex';
               description1.style.display = 'block';
@@ -215,13 +280,29 @@
 
             redLogo2.addEventListener('click', () => {
                 redBox2.style.width = '250px';
-                redBox2.style.height ='460px';
+                if (window.matchMedia("(max-height: 600px)").matches) {
+                    redBox2.style.height ='400px';
+                    formSubject.style.height = '125px';
+                } else {
+                    redBox2.style.height ='460px';
+                }
                 redBox2.style.backgroundColor ='rgb(240, 240, 240)';
                 redBox2.style.borderTop ='red 1px solid'
                 redBox2.style.borderRight ='red 1px solid'
                 contactForm.style.backgroundColor ='rgb(240, 240, 240)';
                 contactForm.style.display = 'flex';
                 contactForm.style.borderBottom ='red 1px solid'
+            })
+
+            closeComment.addEventListener('click', () => {
+                redBox1.style.width = '60px';
+                redBox1.style.height ='40px';
+                newsfeed.style.display = 'none';
+                redBox1.style.backgroundColor ='red';
+                redBox1.style.borderTop ='';
+                redBox1.style.borderRight ='';
+                newsfeed.style.backgroundColor ='red';
+                newsfeed.style.borderBottom ='';
             })
 
             closeForm.addEventListener('click', () => {
