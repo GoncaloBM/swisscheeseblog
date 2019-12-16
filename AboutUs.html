@@ -43,7 +43,9 @@
 
     <main>
         <div class="main-image">
-            <p id="title">ABOUT US</p>
+            <div id="typewritter">
+                <p id="title">ABOUT US</p>
+            </div>
             <div class="container-of-photos">
               <div class="photo-of-us">
                 <div class="photo" id="goncalo"></div>
@@ -76,8 +78,7 @@
                                 <div class="comment-name">Gonçalo</div>
                                 <div class="comment-time">1 hour Ago</div>
                             </div>
-                            <div class="comment-content">Great Blog! 
-                            </div>
+                            <div class="comment-content">Great Blog! </div>
                         </div>
                     </div>
     
@@ -86,8 +87,9 @@
                             <div class="comment-info">
                                 <div class="comment-title">
                                     <div class="comment-name">Dhaenerys</div>
-                                    <div class="comment-time"></div>
+                                    <div class="comment-time">2 hours ago</div>
                                 </div>
+                                <div class="comment-content">Switzerland is a great place for my dragons. I will visit it for sure! Dracarys! </div>
                             </div>
                         </div>
     
@@ -95,9 +97,10 @@
                                 <div class="comment-photo" id='comment-photo-3'></div>
                                 <div class="comment-info">
                                     <div class="comment-title">
-                                        <div class="comment-name"></div>
-                                        <div class="comment-time"></div>
+                                        <div class="comment-name">John</div>
+                                        <div class="comment-time">1 day ago</div>
                                     </div>
+                                    <div class="comment-content">Hello! Could you tell me how can I go to the Alps? I am planning to go there this Summer. Thanks!</div>
                                 </div>
                             </div>
                     <div id='comment-close' class='btn btn-light button-submit'>X</div>
@@ -155,6 +158,7 @@
             const map = document.querySelector('#map');
             const closeComment = document.getElementById('comment-close');
             const newsfeed = document.getElementById('newsfeed');
+            const commentButton = document.getElementById('comment-button');
 
             function titleOnLoad () {
                 title.style.top = ('8%');
@@ -180,16 +184,14 @@ if (window.matchMedia("(max-height: 600px)").matches) {
     redBox1.style.height ='500px';
 }
 redBox1.style.backgroundColor ='rgb(240, 240, 240)';
-redBox1.style.borderTop ='red 2px solid';
-redBox1.style.borderRight ='red 2px solid';
 newsfeed.style.display = 'flex';
 newsfeed.style.left = '0%';
-newsfeed.style.borderBottom ='red 2px solid';
 newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
 })
 
-            redLogo2.addEventListener('click', () => {
+redLogo2.addEventListener('click', () => {
                 redBox2.style.width = '250px';
+
                 if (window.matchMedia("(max-height: 600px)").matches) {
                     redBox2.style.height ='400px';
                     formSubject.style.height = '125px';
@@ -197,11 +199,8 @@ newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
                     redBox2.style.height ='460px';
                 }
                 redBox2.style.backgroundColor ='rgb(240, 240, 240)';
-                redBox2.style.borderTop ='red 1px solid'
-                redBox2.style.borderRight ='red 1px solid'
                 contactForm.style.backgroundColor ='rgb(240, 240, 240)';
                 contactForm.style.display = 'flex';
-                contactForm.style.borderBottom ='red 1px solid'
             })
 
             closeForm.addEventListener('click', () => {
@@ -224,6 +223,10 @@ newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
                 redBox1.style.borderRight ='';
                 newsfeed.style.backgroundColor ='red';
                 newsfeed.style.borderBottom ='';
+            })
+
+            commentButton.addEventListener('click', () => {
+              alert('Developers are working. Try again later.')
             })
 
       </script>

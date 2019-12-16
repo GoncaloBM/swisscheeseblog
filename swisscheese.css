@@ -160,6 +160,7 @@ body {
   font-size: 1.2rem;
   cursor: pointer;
   transition: color 0.5s;
+  text-align: center;
 }
 
 .side-menu-item a {
@@ -247,13 +248,17 @@ body {
 }
 
 #newsfeed {
-  position: absolute;
-  width: 100%;
   display: none;
+  z-index: 3;
+  width: 100%;
+  background-color: red;
+  left: 0%;
+  cursor: auto;
+  align-self: flex-end;
+  justify-content: space-around;
+  transition: all 0.5s;
   flex-direction: column;
   align-items: center;
-  left: -40%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #comment-area {
@@ -333,6 +338,10 @@ body {
   color: #e81e25;
 }
 
+.comment-time {
+  padding-right: 5px;
+}
+
 #comment-close {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   cursor: pointer;
@@ -395,7 +404,6 @@ body {
   transition: all 0.5s;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 4px 8px 0 red, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #form {
@@ -687,6 +695,12 @@ body {
 
   #sub-title {
     font-size: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .comment-content {
+    font-size: 0.8rem;
   }
 }
 

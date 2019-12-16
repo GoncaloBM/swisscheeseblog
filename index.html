@@ -10,7 +10,8 @@
 
 </head>
 <body>
-    <navbar>
+
+    <!-- Side Menu  -->
     <div id="side-menu">
         <ul>
             <li class="side-menu-item">Mind</li>
@@ -20,11 +21,10 @@
             <li class="side-menu-item"><a href='AboutUs.html' style="text-decoration:none; color: inherit;">About us</a></li>
         </ul>
     </div>
-    </navbar>
 
     <main>
-        <!-- Victoria this is here is to copy -->
-
+    
+    <!-- Navbar on Top  -->
             <header class="head-bar">
                     <a href="index.html" class="bLogo"></a>
                     <div class="menu__hamburger"  onclick="myFunction(this)">
@@ -32,10 +32,9 @@
                       <div class="bar-2"></div>
                       <div class="bar-3"></div>
                     </div>
-                </header>
-
-        <!-- Until here  -->
-
+            </header>
+    
+    <!-- Search  -->
     <div class="search">
         <a id='search-close-button' href="#">X</a>
         <div class="search-container">
@@ -46,75 +45,82 @@
         </div>
     </div>
         
+    <!-- Main Page  -->
     <div class="main-page">
         <div class="main-image"></div>
         <div class="container-opac">
          <p id="title">GET TO KNOW SWITZERLAND</p>
-         <p id="sub-title">Beauty in the heart of Europe_</p>
+         <p id="sub-title">Beauty in the heart of Europe</p>
         </div>
-                            <div class="red-box-1">
-                                    <div class="red-logo">
-                                      <img id='red-logo-1'src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
-                                    </div>
-                                    <div id='newsfeed'>
-                                        <div id="comment-area">
-                                            <textarea id='textarea'></textarea>
-                                            <p id='comment-button' class="btn btn-light button-submit">Comment</p>
-                                        </div>
-                                        <div class="comment">
-                                            <div class="comment-photo" id='comment-photo-1'></div>
-                                            <div class="comment-info">
-                                                <div class="comment-title">
-                                                    <div class="comment-name">Gonçalo</div>
-                                                    <div class="comment-time">1 hour Ago</div>
-                                                </div>
-                                                <div class="comment-content">Great Blog! 
-                                                </div>
-                                            </div>
-                                        </div>
 
-                                        <div class="comment">
-                                                <div class="comment-photo" id='comment-photo-2'></div>
-                                                <div class="comment-info">
-                                                    <div class="comment-title">
-                                                        <div class="comment-name">Dhaenerys</div>
-                                                        <div class="comment-time"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="comment">
-                                                    <div class="comment-photo" id='comment-photo-3'></div>
-                                                    <div class="comment-info">
-                                                        <div class="comment-title">
-                                                            <div class="comment-name"></div>
-                                                            <div class="comment-time"></div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                        <div id='comment-close' class='btn btn-light button-submit'>X</div>
-
-                                    </div>
+        <!-- First Red Bar -->
+        <div class="red-box-1">
+                <div class="red-logo">
+                  <img id='red-logo-1'src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/message.png">
+                </div>
+                <div id='newsfeed'>
+                    <div id="comment-area">
+                        <textarea id='textarea'></textarea>
+                        <p id='comment-button' class="btn btn-light button-submit">Comment</p>
+                    </div>
+                    <div class="comment">
+                        <div class="comment-photo" id='comment-photo-1'></div>
+                        <div class="comment-info">
+                            <div class="comment-title">
+                                <div class="comment-name">Gonçalo</div>
+                                <div class="comment-time">1 hour Ago</div>
+                            </div>
+                            <div class="comment-content">Great Blog! </div>
+                        </div>
+                    </div>
+    
+                    <div class="comment">
+                            <div class="comment-photo" id='comment-photo-2'></div>
+                            <div class="comment-info">
+                                <div class="comment-title">
+                                    <div class="comment-name">Dhaenerys</div>
+                                    <div class="comment-time">2 hours ago</div>
                                 </div>
-                                <div class="red-box-2">
-                                       <div class="red-logo">
-                                        <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
+                                <div class="comment-content">Switzerland is a great place for my dragons. I will visit it for sure! Dracarys! </div>
+                            </div>
+                        </div>
+    
+                        <div class="comment">
+                                <div class="comment-photo" id='comment-photo-3'></div>
+                                <div class="comment-info">
+                                    <div class="comment-title">
+                                        <div class="comment-name">John</div>
+                                        <div class="comment-time">1 day ago</div>
                                     </div>
-                                        <div id='contact-form'>
-                                            <form id='form' action="/action_page.php">
-                                                <input type="text" id="fname" placeholder="Name:">
-                                                <input type="email" id="femail" placeholder="Email:">
-                                                <input type="text" id="fsub" placeholder="Subject:">
-                                                <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
-                                                <div class='btn btn-light button-submit'>Submit</div>
-                                            </form> 
-                                            <div id='close-form' class="btn btn-light button-submit">x</div>
-                                        </div>
-                                </div> 
+                                    <div class="comment-content">Hello! Could you tell me how can I go to the Alps? I am planning to go there this Summer. Thanks!</div>
+                                </div>
+                            </div>
+                    <div id='comment-close' class='btn btn-light button-submit'>X</div>
+    
+                </div>
+            </div>
+
+        <!-- Second Red Bar -->
+        <div class="red-box-2">
+                <div class="red-logo">
+                 <img id=red-logo-2 src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/questions.png">
+             </div>
+             <div id='contact-form'>
+                 <form id='form' action="/action_page.php">
+                     <input type="text" id="fname" placeholder="Name:">
+                     <input type="email" id="femail" placeholder="Email:">
+                     <input type="text" id="fsub" placeholder="Subject:">
+                     <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
+                     <div class='btn btn-light button-submit'>Submit</div>
+                 </form> 
+                 <div id='close-form' class="btn btn-light button-submit">x</div>
+             </div>
+         </div>  
     </div>
 
     <div class="separator"></div>
 
+    <!-- Second Page  -->
     <div class="photostand">
         <container class="photos">
             <div class="photo-row" id="photo1">
@@ -151,6 +157,7 @@
     </div>
     </main>
     
+    <!-- Footer  -->
     <footer>
         <div id="footer">
             <a id="logo-1" href="https://www.facebook.com/wildcodeschoolportugal/"></a>
@@ -183,6 +190,7 @@
             const closeComment = document.getElementById('comment-close');
             const closeForm = document.getElementById('close-form');
             const title = document.querySelector('.container-opac');
+            const commentButton = document.getElementById('comment-button');
 
             window.addEventListener('load', () => {
                 title.style.top = ('30%');
@@ -219,11 +227,8 @@
                     redBox1.style.height ='500px';
                 }
                 redBox1.style.backgroundColor ='rgb(240, 240, 240)';
-                redBox1.style.borderTop ='red 2px solid';
-                redBox1.style.borderRight ='red 2px solid';
                 newsfeed.style.display = 'flex';
                 newsfeed.style.left = '0%';
-                newsfeed.style.borderBottom ='red 2px solid';
                 newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
             })
 
@@ -232,10 +237,7 @@
                 redBox1.style.height ='40px';
                 newsfeed.style.display = 'none';
                 redBox1.style.backgroundColor ='red';
-                redBox1.style.borderTop ='';
-                redBox1.style.borderRight ='';
                 newsfeed.style.backgroundColor ='red';
-                newsfeed.style.borderBottom ='';
             })
 
             redLogo2.addEventListener('click', () => {
@@ -248,11 +250,8 @@
                     redBox2.style.height ='460px';
                 }
                 redBox2.style.backgroundColor ='rgb(240, 240, 240)';
-                redBox2.style.borderTop ='red 1px solid'
-                redBox2.style.borderRight ='red 1px solid'
                 contactForm.style.backgroundColor ='rgb(240, 240, 240)';
                 contactForm.style.display = 'flex';
-                contactForm.style.borderBottom ='red 1px solid'
             })
 
             closeForm.addEventListener('click', () => {
@@ -260,10 +259,11 @@
                 redBox2.style.height ='40px';
                 contactForm.style.display = 'none';
                 redBox2.style.backgroundColor ='red';
-                redBox2.style.borderTop ='';
-                redBox2.style.borderRight ='';
                 contactForm.style.backgroundColor ='red';
-                contactForm.style.borderBottom ='';
+            })
+
+            commentButton.addEventListener('click', () => {
+              alert('Developers are working. Try again later.')
             })
             </script>
 </body>
