@@ -4,36 +4,8 @@ body {
   width: 100%;
   height: 100%;
 }
-/* .bHeader {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 4.5rem;
-    z-index: 101;
-    background-color: rgb(240, 240, 240);
-    transition-property: opacity;
-    transition-duration: 0.4s;
-    transition-timing-function: ease;
-    transition-delay: 0s;
-}
 
-.bLogo {
-    left: 1rem;
-    top: 1.15rem;
-    width: 16.5625rem;
-    height: 2.1875rem;
-    background-image: url('https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Logo.png');
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: contain;
-}
-
-.burger-icon {
-    display: inline-block;
-    cursor: pointer; 
-} */
+/* Victoria this is to copy  */
 
 .head-bar {
   position: fixed;
@@ -94,28 +66,11 @@ body {
   transform: rotate(45deg) translate(-2px, -6px);
 }
 
-/* .head-bar {
-    width: 100%;
-    height: 60px;
-    z-index: 2;
-    background-color: #f6f6f6;
-    display: flex;
-    align-items: center;
-    position: absolute;
-} */
+/* Until Here  */
 
-#search-icon {
-  position: absolute;
-  left: 80%;
-  /*vertical-align: middle; */
-  background-color: #d3c9d1;
-  padding-top: 1%;
-  padding-right: 0.2%;
-  padding-left: 0.2%;
-  padding-bottom: 0.1%;
-  border-bottom-left-radius: 5%;
-  border-bottom-right-radius: 5%;
-  align-self: flex-start;
+.burger-icon {
+  display: inline-block;
+  cursor: pointer;
 }
 
 #logo {
@@ -127,65 +82,7 @@ body {
   height: 50px;
 }
 
-.search {
-  position: fixed;
-  width: 100%;
-  height: 100vh;
-  z-index: 30;
-  align-items: center;
-  justify-content: center;
-  background-color: black;
-  display: none;
-  transition: all 0.5s;
-}
-
-#search-close-button {
-  position: absolute;
-  color: white;
-  top: 5%;
-  left: 95%;
-  font-size: 2rem;
-  cursor: pointer;
-  text-decoration: none;
-}
-
-.search-container {
-  width: 40%;
-  /* left: 30%;
-    top: 50%; */
-  vertical-align: middle;
-  position: absolute;
-  line-height: 3rem;
-}
-
-#search-input {
-  background-color: transparent;
-  border-top: none;
-  border-right: none;
-  border-left: none;
-  width: 80%;
-  font-size: 2rem;
-  color: white;
-}
-
-#submit-button {
-  width: 10%;
-  background-color: transparent;
-  border: none;
-}
-
-.fancynav {
-  display: flex;
-  width: 72px;
-  height: 100vh;
-  top: 0;
-  right: 0;
-  position: fixed;
-  z-index: 20;
-  background-color: #303030;
-  opacity: 1;
-  align-items: center;
-}
+/* To copy  */
 
 #side-menu {
   position: fixed;
@@ -232,16 +129,21 @@ body {
   color: red;
 }
 
+/* Until here  */
+
 .main-page {
+  display: flex;
   width: 100%;
 }
 
 .main-image {
-  display: block;
-  background-image: url(https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/Imagens/Landing%20Page/skydive-switzerland-fun-jumpers-swiss-flag-flying-1.jpg);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url('Imagens/Xclusive/Alphorns_Grindelwald.jpg');
   height: 100vh;
-  background-size: cover;
-  background-position: center center;
   margin: 0;
   position: relative;
   filter: grayscale(90%);
@@ -252,28 +154,55 @@ body {
   background-repeat: no-repeat;
 }
 
-#title {
-  font-size: 6rem;
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: block;
-  top: 30%;
-  z-index: 2;
-  left: 10%;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
+#titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: translateY(300px);
+  opacity: 0;
+  transition: 1s all;
 }
 
-#sub-title {
-  font-size: 20px;
-  position: absolute;
-  background-color: transparent;
-  display: block;
-  left: 10%;
+.title-xclusive {
   color: white;
-  top: 50%;
 }
+
+#title1 {
+  font-size: 5rem;
+}
+
+#title2 {
+  font-size: 3rem;
+  opacity: 0;
+
+  overflow: hidden;
+  border-right: 0.15em solid red;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation: typing 5.5s steps(80, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
+}
+
 
 .red-box-1 {
   position: fixed;
@@ -376,10 +305,6 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 30%;
-}
-
-.comment-time {
-    padding-right: 5px;
 }
 
 .comment-name {
@@ -493,151 +418,9 @@ body {
   height: 1px;
 }
 
-.sec-page {
-  /*width: calc(100% - 72px);*/
-  width: 100%;
-  margin-top: 40px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  position: relative;
-  padding-bottom: 0px;
-  margin-bottom: 40px;
-  /* transition: padding-bottom 0.2s linear; */
-}
-
-.carousel-caption {
-  display: flex;
-  align-items: center;
-}
-
-.container-of-captions {
-  display: block;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 5px;
-}
-
-.description-title {
-  font-size: 2rem;
-}
-
-.descricao-aparece {
-  cursor: pointer;
-}
-
-.carousel-imagem {
-  z-index: 1;
-}
-
-.image-description {
-  display: none;
-  position: absolute;
-  bottom: 0%;
-  align-items: center;
-  flex-direction: column;
-  padding: 10px;
-  border: 1px solid black;
-  z-index: 0;
-  width: 77%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.description-image {
-  max-height: 100px;
-  margin: 10px;
-}
-
-hr {
-  border: 0;
-  clear:both;
-  display:block;
-  width: 96%;
-  height: 1px;
-  }
-
-.description-article {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 10px;
-}
-
-.description-article-1 {
-  height: 150px;
-}
-
-.article-title {
-    font-size: 1rem;
-}
-
-.description-article-2 {
-  height: 200px;
-}
-
-.description-article-2 img {
-  max-width: 260px;
-  height: 12rem;
-  margin: 5px;
-  border: 1px black solid;
-}
-
-.description-article-3 {
-  height: 300px;
-}
-
-.description-article-3 img {
-  max-width: 290px;
-  height: 15rem;
-  margin: 5px;
-  border: 1px black solid;
-}
-
-.article {
-  text-align: justify;
-}
-
-.description-article-1 img {
-  max-width: 240px;
-  height: 10rem;
-  margin: 5px;
-  border: 1px solid;
-}
-
-#close-description {
-  cursor: pointer;
-}
-
-#description-1 {
-  display: none;
-  text-align: center;
-}
-
-#description-2 {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-}
-
-#content-desc2 {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#content-desc2 p {
-  width: 40%;
-}
-
-#description-3 {
-  display: none;
-  align-items: center;
-  flex-direction: column;
-}
-
 #footer {
   position: absolute;
-  width: 100%;
+  width: 95%;
   height: 10vh;
   z-index: 2;
   background-color: #f6f6f6;
@@ -708,6 +491,9 @@ hr {
 }
 
 @media (max-width: 1270px) {
+  .photo-row {
+    width: 40%;
+  }
 
   #sub-title {
     font-size: 15px;
@@ -717,49 +503,31 @@ hr {
     width: 30%;
     right: -30%;
   }
+
+  #caption-row {
+    width: 85%;
+    margin-bottom: 10px;
+  }
+
+  .caption-1 {
+    height: 50vh;
+  }
+
+  .caption-2 {
+    height: 50vh;
+  }
 }
 
 @media (max-width: 1000px) {
-
   .comment-content {
     font-size: 0.8rem;
   }
-  
-    .image-description {
-        width: 90%;
-       }
-    
-    .description-article-1 {
-        height: 230px;
-    }
-
-    .description-article-2 {
-        height: 250px;
-    }
-
-    .description-article-3 {
-        height: 350px;
-    }
-
-}
-
-@media (max-width: 850px) {
-    .article {
-        font-size: 0.8rem;
-    }
 }
 
 @media (max-width: 750px) {
-  #title {
-    font-size: 40px;
-  }
 
   #logo img {
     height: 40px;
-  }
-
-  #search-icon {
-    left: 75%;
   }
 
   #side-menu {
@@ -767,129 +535,48 @@ hr {
     right: -100%;
     justify-content: center;
   }
-
-  .description-article-3 img {
-    height: 10rem;
-}
 }
 
 @media (max-width: 700px) {
-    .description-article-1 {
-        height: 250px;
-    }
 
-    .description-article-2 {
-        height: 300px;
-    }
-
-    .description-article-1 img {
-        height: 8rem;
-    }
-
-    .description-article-2 img {
-        height: 7rem;
-    }
-}
-
-@media (max-width: 650px) {
-    .description-article-3 {
-        height: 375px;
-    }
-}
-@media (max-width: 550px) {
-    .image-description {
-     width: 90%;
-    }
-}
-
-@media (max-width: 600px) {
-
-    .description-article-3 img {
-        height: 7rem;
-    }
-
-    .description-article-3.article {
-        font-size: 0.7rem;
-    }
-}
-
-@media (max-width: 480px) {
-
-    .description-article-1 {
-        height: 300px;
-    }
-
-    .description-article-1 img {
-        height: 7rem;
-    }
-
-    .article {
-        font-size: 0.7rem;
-    }
-
-    .description-article-3 {
-        height: 400px;
-    }
 }
 
 @media (max-width: 500px) {
-    #title {
+  .comment-content {
+    font-size: 0.7rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  #title2 {
+    font-size: 2rem;
+  }
+  }
+  
+  @media (max-width: 850px) {
+  
+    #title1 {
       font-size: 3rem;
     }
   
-    #sub-title {
+    #title2 {
       font-size: 1.5rem;
     }
-  
-    #search-icon {
-      left: 75%;
-    }
-  
-    #side-menu {
-      width: 100%;
-      right: -100%;
-      justify-content: center;
-    }
-
-    .comment-content {
-      font-size: 0.7rem;
-    }
   }
   
-  @media (max-width: 500px) {
-    .bLogo {
-      margin-left: 0.5rem;
-      width: 16rem;
-    }
-    .menu__hamburger {
-      margin-right: 0.5rem;
-    }
-    .container-opac {
-      left: 20%;
-      display: flex;
-      align-items: center;
-    }
-  
-    #title {
+  @media (max-width: 650px) {
+    #title1 {
       font-size: 2rem;
     }
-  
-    #sub-title {
+    #title2 {
       font-size: 1rem;
     }
-    #footer {
-      width: 100%;
+  }
+  @media (max-width: 500px) {
+    #title1 {
+      font-size: 1rem;
+    }
+    #title2 {
+      font-size: 0.5rem;
     }
   }
-  
-  @media (max-height: 600px) {
-    .red-box-2 {
-      top: 25%;
-    }
-
-    .article {
-        font-size: 0.5rem;
-    }
-    
-  }
-  

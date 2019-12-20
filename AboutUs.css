@@ -117,10 +117,11 @@ body {
   height: 2rem;
   transform: rotate(-45deg);
   transition: all 0.3s ease-in-out 0s;
+  transform-origin: center;
 }
 
 .xclusive-rotate:hover #x-icon {
-  transform: rotate(125deg);
+  transform: rotate(135deg);
 }
 
 .side-menu-item:hover {
@@ -158,24 +159,31 @@ body {
   color: black;
   opacity: 1;
 
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: 0.15em solid red; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: 0.15em; /* Adjust as needed */
-  animation: 
-    typing 3.5s steps(40, end), 
-    blink-caret 0.75s step-end infinite;
+  overflow: hidden;
+  border-right: 0.15em solid red;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 @keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: red; }
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: red;
+  }
 }
 
 .container-of-photos {
@@ -187,7 +195,7 @@ body {
 }
 
 .photo-of-us {
-  width: 20%;
+  width: 20vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -206,7 +214,33 @@ body {
 }
 
 #goncalo {
-  background-image: url(https://cdn.pixabay.com/photo/2016/04/01/10/11/avatar-1299805_960_720.png);
+  background-image: url("Imagens/About Us/avatar_profile_user_music_headphones_shirt_cool-512.png");
+}
+
+#Silvia {
+  background-image: url("Imagens/About Us/Female-Avatar-5-e1518176677210.png");
+}
+
+#Victoria {
+  background-image: url("Imagens/About Us/seo_manager_avatar_women_woman_profile_character_professions_2-512.png");
+}
+
+.name-of-us {
+  text-align: center;
+  transform: translateY(-50px);
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.photo-of-us:hover .name-of-us {
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+.photo-of-us:hover .photo {
+  outline: none;
+  border-color: #9ecaed;
+  box-shadow: 0 0 10px #9ecaed;
 }
 
 #map {
@@ -228,7 +262,7 @@ body {
   background-color: red;
   filter: none;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
   transition: all 0.5s;
 }
 
@@ -333,19 +367,13 @@ body {
   color: #e81e25;
 }
 
-.red-box-1 .red-logo {
-  margin-bottom: 7px;
-}
-
 .red-box-1:hover {
   width: 65px;
 }
 
 .red-logo {
   cursor: pointer;
-  margin-top: 5px;
   margin-right: 5px;
-  margin-bottom: 5px;
   align-self: flex-end;
 }
 
@@ -362,11 +390,11 @@ body {
   z-index: 2;
   display: flex;
   background-color: red;
-  align-items: flex-end;
+  align-items: center;
   transition: all 0.5s;
   overflow: hidden;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 .red-box-2:hover {
@@ -536,6 +564,12 @@ body {
   }
 }
 
+@media (max-width: 1000px) {
+  .comment-content {
+    font-size: 0.8rem;
+  }
+}
+
 @media (max-width: 750px) {
   #title {
     font-size: 40px;
@@ -578,5 +612,19 @@ body {
 
   .caption-2 {
     height: 50vh;
+  }
+}
+
+@media (max-width: 700px) {
+  .name-of-us {
+    font-size: 0.8rem;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .comment-content {
+    font-size: 0.7rem;
   }
 }
