@@ -154,6 +154,7 @@ body {
 }
 
 #title {
+  font-family: 'Tajawal', sans-serif;
   font-size: 3rem;
   z-index: 2;
   color: black;
@@ -226,6 +227,7 @@ body {
 }
 
 .name-of-us {
+  font-family: 'Tajawal', sans-serif;
   text-align: center;
   transform: translateY(-50px);
   transition: all 0.5s;

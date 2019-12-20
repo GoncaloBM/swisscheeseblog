@@ -209,8 +209,7 @@ body {
   align-items: flex-start;
   flex-direction: column;
   width: 75%;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 5px;
+  background-color: rgba(29, 29, 29, 0.5);
   top: 10%;
   left: 5%;
   opacity: 0;
@@ -218,6 +217,7 @@ body {
 }
 
 #title {
+  font-family: 'Tajawal', sans-serif;
   font-size: 5rem;
   display: block;
   top: 0%;
@@ -226,6 +226,7 @@ body {
 }
 
 #sub-title {
+  font-family: 'Tajawal', sans-serif;
   font-size: 3rem;
   display: block;
   color: white;
@@ -367,7 +368,7 @@ body {
 }
 
 .red-logo img {
-  width: 30px;
+  width: 25%;
 }
 
 .red-box-2 {
@@ -525,6 +526,7 @@ body {
 }
 
 .photo-title {
+  font-family: 'Tajawal', sans-serif;
   color: white;
   font-size: 250%;
   margin-top: auto;
@@ -795,6 +797,7 @@ body {
   .menu__hamburger {
     margin-right: 0.5rem;
   }
+
   .container-opac {
     left: 20%;
     display: flex;

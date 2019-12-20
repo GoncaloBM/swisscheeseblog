@@ -160,7 +160,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(29, 29, 29, 0.5);
   transform: translateY(300px);
   opacity: 0;
   transition: 1s all;
@@ -171,10 +171,12 @@ body {
 }
 
 #title1 {
+  font-family: 'Tajawal', sans-serif;
   font-size: 5rem;
 }
 
 #title2 {
+  font-family: 'Tajawal', sans-serif;
   font-size: 3rem;
   opacity: 0;
 
