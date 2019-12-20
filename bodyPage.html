@@ -15,6 +15,7 @@
 </head>
 <body>
 
+  <!-- Navbar on Top -->
     <header class="head-bar">
         <a href="index.html" class="bLogo"></a>
         <div class="menu__hamburger"  onclick="myFunction(this)">
@@ -24,7 +25,7 @@
         </div>
     </header>
 
-    <navbar>
+    <!-- Menu on the right -->
     <div id="side-menu">
         <ul>
           <li class="side-menu-item"><a href='Mind.html' style="text-decoration:none; color: inherit;">Soul</a></li>
@@ -35,15 +36,15 @@
         </ul>
     </div>
 
-    </navbar>
-
     <main>
+      <!-- Main Page -->
     <div class="main-page">
         <div class="main-image"></div>
         <div class="title">
           <p id="title">BODY</p>
           <p id="sub-title">Explore the snow and the mountains with some adventure</p>
         </div>
+        <!-- First Red Bar -->
          <div class="red-box-1">
             <div class="red-logo">
               <img id='red-logo-1'src="feeds.png">
@@ -89,6 +90,7 @@
 
             </div>
         </div>
+        <!-- Second Red Bar -->
       <div class="red-box-2">
              <div class="red-logo">
               <img id=red-logo-2 src="message.png">
@@ -107,7 +109,7 @@
     </div>
 
     <div class="separator"></div>
-
+<!-- Seconde Page -->
     <div class="sec-page">
 
     <div class="carousel-imagem">
@@ -153,7 +155,9 @@
     </div>
     </div>
 
+    <!-- Descriptions -->
       <div class="image-description">
+        <!-- Description of First Pic -->
         <div id="description-1">
           <div class="description-title-image">Reasons to ski in Switzerland</div>
           <div class ='description-article description-article-1'>
@@ -195,6 +199,7 @@
           For many, Zermatt is the top ski destination in Switzerland. It brings together most of the above; top-class slopes, is snow sure (from around November to April) and offers everything you’d need for a comfortable holiday. All of this is rolled into a small town that sits in the shadow of the might Matterhorn, the iconic lonely mountain of Switzerland.</div>
     </div>
         </div>
+        <!-- Descriptions of second Pic -->
         <div id="description-2">
             <div class="description-title-image">What are the best spots to snowboard?</div>
             <div class ='description-article description-article-2'>
@@ -243,6 +248,7 @@
                   <img src="Imagens/Body Page/et7mfb.jpg" alt="article-image6">
             </div>
         </div>
+        <!-- Descriptions of third Pic -->
         <div id="description-3">
             <div class="description-title-image">Tips to enjoy riding in the Swiss Alps</div>
             <div class ='description-article description-article-3'>
@@ -290,6 +296,7 @@
     </div>
     </main>
     
+    <!-- Footer  -->
     <footer>
         <div id="footer">
             <a id="logo-1" href="https://www.facebook.com/wildcodeschoolportugal/"></a>
@@ -307,7 +314,6 @@
               document.getElementById('side-menu').classList.toggle('active');
             }
             
-            const hideHeadBar = document.getElementsByClassName('head-bar')[0];
             const secPage = document.getElementsByClassName('sec-page')[0];
             const descricaoAparece1 = document.getElementsByClassName("descricao-aparece")[0];
             const descricaoAparece2 = document.getElementsByClassName("descricao-aparece")[1];
