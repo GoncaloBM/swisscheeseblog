@@ -112,9 +112,9 @@
                      <input type="email" id="femail" placeholder="Email:">
                      <input type="text" id="fsub" placeholder="Subject:">
                      <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
-                     <div class='btn btn-light button-submit'>Submit</div>
+                     <div id='submit' class='btn btn-light button-submit'>Submit</div>
                  </form> 
-                 <div id='close-form' class="btn btn-light button-submit">x</div>
+                 <div id='close-form' class="btn btn-light button-submit">X</div>
              </div>
          </div>  
     </div>
@@ -192,6 +192,7 @@
             const closeForm = document.getElementById('close-form');
             const title = document.querySelector('.container-opac');
             const commentButton = document.getElementById('comment-button');
+            const submitButton = document.getElementById('submit');
 
             window.addEventListener('load', () => {
                 title.style.top = ('30%');
@@ -268,6 +269,10 @@
             })
 
             commentButton.addEventListener('click', () => {
+              alert('Developers are working. Try again later.')
+            })
+
+            submitButton.addEventListener('click', () => {
               alert('Developers are working. Try again later.')
             })
             </script>

@@ -119,9 +119,9 @@
                  <input type="email" id="femail" placeholder="Email:">
                  <input type="text" id="fsub" placeholder="Subject:">
                  <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
-                 <div class='btn btn-light button-submit'>Submit</div>
+                 <div id='submit' class='btn btn-light button-submit'>Submit</div>
              </form> 
-             <div id='close-form' class="btn btn-light button-submit">x</div>
+             <div id='close-form' class="btn btn-light button-submit">X</div>
          </div>
      </div>   
     </div>
@@ -162,6 +162,7 @@
             const closeComment = document.getElementById('comment-close');
             const newsfeed = document.getElementById('newsfeed');
             const commentButton = document.getElementById('comment-button');
+            const submitButton = document.getElementById('submit');
 
             function titleOnLoad () {
                 title.style.top = ('8%');
@@ -227,6 +228,10 @@ redLogo2.addEventListener('click', () => {
             })
 
             commentButton.addEventListener('click', () => {
+              alert('Developers are working. Try again later.')
+            })
+
+            submitButton.addEventListener('click', () => {
               alert('Developers are working. Try again later.')
             })
 

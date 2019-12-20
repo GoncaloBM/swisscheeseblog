@@ -40,7 +40,10 @@
     <main>
     <div class="main-page">
         <div class="main-image"></div>
-         <p id="title">BODY</p>
+        <div class="title">
+          <p id="title">BODY</p>
+          <p id="sub-title">Explore the snow and the mountains with some adventure</p>
+        </div>
          <div class="red-box-1">
             <div class="red-logo">
               <img id='red-logo-1'src="feeds.png">
@@ -96,9 +99,9 @@
                   <input type="email" id="femail" placeholder="Email:">
                   <input type="text" id="fsub" placeholder="Subject:">
                   <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
-                  <div class='btn btn-light button-submit'>Submit</div>
+                  <div id='submit' class='btn btn-light button-submit'>Submit</div>
               </form> 
-              <div id='close-form' class="btn btn-light button-submit">x</div>
+              <div id='close-form' class="btn btn-light button-submit">X</div>
           </div>
       </div>  
     </div>
@@ -152,7 +155,7 @@
 
       <div class="image-description">
         <div id="description-1">
-          <div class="description-title">Reasons to ski in Switzerland</div>
+          <div class="description-title-image">Reasons to ski in Switzerland</div>
           <div class ='description-article description-article-1'>
             <div class = 'article'><strong class='article-title'>It’s got some of the best slopes in the world</strong><br>
           It’s no secret that you’ll find some of the top slopes in the world. Thousands of people flock to the hundreds of resorts that are scattered across the country. Among them are some the best in the world for a great ski experience and the most spectacular, for their outstanding beauty, or overall experience. If you’re travelling on a budget you still have several options to ski in Switzerland.</div>
@@ -193,7 +196,7 @@
     </div>
         </div>
         <div id="description-2">
-            <div class="description-title">What are the best spots to snowboard?</div>
+            <div class="description-title-image">What are the best spots to snowboard?</div>
             <div class ='description-article description-article-2'>
                 <img src="Imagens/Body Page/aw07jb.jpg" alt="article-image6">
                 <div class = 'article'><strong class='article-title'>La Fouly</strong><br>
@@ -241,7 +244,7 @@
             </div>
         </div>
         <div id="description-3">
-            <div class="description-title">Tips to enjoy riding in the Swiss Alps</div>
+            <div class="description-title-image">Tips to enjoy riding in the Swiss Alps</div>
             <div class ='description-article description-article-3'>
                 <div class = 'article'><strong class='article-title'>TAKE THE OTHER ROAD</strong><br>
                   Cyclists can get so caught up in checking off big mountain passes (or cols), that they miss the magic of the small stuff. On day one, Alain showed up at the Hotel Alpe Fleurie in Villars-sur-Ollon with a rented Scott Foil for me, and by pedal stroke number two we were climbing a steep section of the Col de la Croix, a pass that connects Villars-sur-Ollon with neighboring Les Diablerets. I was tired from my flight and needed to dial in my bike fit, so instead of going up and over the pass, we turned onto a secondary road, as narrow as an alley, that wound through alpine meadows and skirted a dramatic rock face. As the lane turned to dirt and storm clouds began to gather (common late-afternoon weather in the Alps), a choir of cowbells transformed the little valley into an echoing cathedral. </div>
@@ -325,6 +328,7 @@
             const closeComment = document.getElementById('comment-close');
             const newsfeed = document.getElementById('newsfeed');
             const commentButton = document.getElementById('comment-button');
+            const submitButton = document.getElementById('submit');
 
             redLogo1.addEventListener('click', () => {
 
@@ -359,13 +363,13 @@ newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
               description1.style.display = 'block';
 
               if (window.matchMedia('(max-width: 480px)').matches) {
-                secPage.style.paddingBottom = '2150px';
-              } else if (window.matchMedia('(max-width: 700px)').matches) {
                 secPage.style.paddingBottom = '1850px';
+              } else if (window.matchMedia('(max-width: 700px)').matches) {
+                secPage.style.paddingBottom = '1800px';
               } else if (window.matchMedia('(max-width: 1000px)').matches) {
-                secPage.style.paddingBottom = '1750px';
+                secPage.style.paddingBottom = '1700px';
               } else {
-                secPage.style.paddingBottom = '1250px';
+                secPage.style.paddingBottom = '1200px';
               }
 
               setTimeout(scrollToView(), 2000)
@@ -374,8 +378,10 @@ newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
             descricaoAparece2.addEventListener('click', () => {
               imageDescription.style.display = 'flex';
               description2.style.display = 'flex';
-              if (window.matchMedia('(max-width: 700px)').matches) {
-                secPage.style.paddingBottom = '2150px';
+              if (window.matchMedia('(max-width: 620px)').matches) {
+                secPage.style.paddingBottom = '1900px';
+              } else if (window.matchMedia('(max-width: 700px)').matches) {
+                secPage.style.paddingBottom = '1850px';
               } else if (window.matchMedia('(max-width: 1000px)').matches) {
                 secPage.style.paddingBottom = '1850px';
               } else {
@@ -392,9 +398,9 @@ newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
               } else if (window.matchMedia('(max-width: 650px)').matches) {
                 secPage.style.paddingBottom = '2200px';  
               } else if (window.matchMedia('(max-width: 1000px)').matches) {
-                secPage.style.paddingBottom = '2100px';
+                secPage.style.paddingBottom = '2050px';
               } else {
-                secPage.style.paddingBottom = '1900px';
+                secPage.style.paddingBottom = '1800px';
               }
               setTimeout(scrollToView(), 2000)
             })
@@ -457,6 +463,10 @@ newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
             })
 
             commentButton.addEventListener('click', () => {
+              alert('Developers are working. Try again later.')
+            })
+
+            submitButton.addEventListener('click', () => {
               alert('Developers are working. Try again later.')
             })
 
