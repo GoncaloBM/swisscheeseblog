@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="bodyPage.css">
+    <title>Swiss Cheese</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+
+    <header class="head-bar">
+        <a href="index.html" class="bLogo"></a>
+        <div class="menu__hamburger"  onclick="myFunction(this)">
+          <div class="bar-1"></div>
+          <div class="bar-2"></div>
+          <div class="bar-3"></div>
+        </div>
+    </header>
+
+    <navbar>
+    <div id="side-menu">
+        <ul>
+            <li class="side-menu-item"><a href='Mind.html' style="text-decoration:none; color: inherit;">Soul</a></li>
+            <li class="side-menu-item"><a href='bodyPage.html' style="text-decoration:none; color: inherit;">Body</a></li>
+            <li class="side-menu-item"><a href='Mind.html' style="text-decoration:none; color: inherit;">Mind</a></li>
+            <li class="side-menu-item xclusive-rotate"><a href="Xclusive.html" style="text-decoration:none; color: inherit;"><img id='x-icon' src="https://raw.githubusercontent.com/silviaalexasilva/swisscheeseblog/master/main.png">clusive</a></li>
+            <li class="side-menu-item"><a href='AboutUs.html' style="text-decoration:none; color: inherit;">About us</a></li>
+        </ul>
+    </div>
+
+    </navbar>
+
+    <main> <!-- First Red Bar -->
+        <div class="red-box-1">
+           <div class="red-logo">
+             <img id='red-logo-1'src="feeds.png">
+           </div>
+           <div id='newsfeed'>
+               <div id="comment-area">
+                   <textarea id='textarea'></textarea>
+                   <p id='comment-button' class="btn btn-light button-submit">Comment</p>
+               </div>
+               <div class="comment">
+                   <div class="comment-photo" id='comment-photo-1'></div>
+                   <div class="comment-info">
+                       <div class="comment-title">
+                           <div class="comment-name">Bill</div>
+                           <div class="comment-time">1 hour Ago</div>
+                       </div>
+                       <div class="comment-content">Great Blog! </div>
+                   </div>
+               </div>
+
+               <div class="comment">
+                       <div class="comment-photo" id='comment-photo-2'></div>
+                       <div class="comment-info">
+                           <div class="comment-title">
+                               <div class="comment-name">Daenerys</div>
+                               <div class="comment-time">2 hours ago</div>
+                           </div>
+                           <div class="comment-content">Switzerland is a great place for my dragons. I will visit it for sure! Dracarys! </div>
+                       </div>
+                   </div>
+
+                   <div class="comment">
+                           <div class="comment-photo" id='comment-photo-3'></div>
+                           <div class="comment-info">
+                               <div class="comment-title">
+                                   <div class="comment-name">John</div>
+                                   <div class="comment-time">1 day ago</div>
+                               </div>
+                               <div class="comment-content">Hello! Could you tell me how can I go to the Alps? I am planning to go there this Summer. Thanks!</div>
+                           </div>
+                       </div>
+               <div id='comment-close' class='btn btn-light button-submit'>X</div>
+
+           </div>
+       </div>
+       <!-- Second Red Bar -->
+     <div class="red-box-2">
+            <div class="red-logo">
+             <img id=red-logo-2 src="message.png">
+         </div>
+         <div id='contact-form'>
+             <form id='form' action="/action_page.php">
+                 <input type="text" id="fname" placeholder="Name:">
+                 <input type="email" id="femail" placeholder="Email:">
+                 <input type="text" id="fsub" placeholder="Subject:">
+                 <textarea id="fsubject" name="subject" placeholder="Tell us something:"></textarea>
+                 <div id='submit' class='btn btn-light button-submit'>Submit</div>
+             </form> 
+             <div id='close-form' class="btn btn-light button-submit">X</div>
+         </div>
+     </div>  
+   </div>
+   <div class="container" style="padding-top:30px; ">
+      <section class="gallery-block grid-gallery">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="https://cdn.thecrazytourist.com/wp-content/uploads/2017/08/Lake-Z%C3%BCrich.jpg" alt="">
+              <div class="overlay">
+                <h3>Peaks of Pfannenstiel </h3>
+                <p>There are many ways to make the most of the lake, some we’ll go into...</p>
+                        <p><a href="#"><button>more info.</button></a></p> 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/01/23/14/null-stern6.jpg?w660" alt="">
+              <div class="overlay">
+                <h3></h3>
+                <p>Located in the middle of the Swiss Alps, it only features a bed with linens...</p>
+                        <p><a href="#"><button>more info.</button></a></p> 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="https://communitysoulwork.files.wordpress.com/2017/04/soul-searching.jpg?w=502" alt="">
+              <div class="overlay">
+                <h3>Uetliberg Landscape</h3>
+                <p>And up there the scenery is out of this world, as you gaze over Zürich,...</p>
+                        <p><a href="#"><button>more info.</button></a></p> 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="https://c1.staticflickr.com/5/4679/38448149794_4fdb6605f6_b.jpg" alt="">
+              <div class="overlay">
+                <h3>Römerhof Lights</h3>
+                <p>Located in the middle of the Swiss Alps, it only features a bed with linens...</p>
+                        <p><a href="#"><button>more info.</button></a></p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="https://cdn.thecrazytourist.com/wp-content/uploads/2017/08/District-5.jpg" alt="">
+              <div class="overlay">
+                <h3>Null Stern</h3>
+                <p>Located in the middle of the Swiss Alps, it only features a bed with linens...</p>
+                        <p><a href="#"><button>more info.</button></a></p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/01/23/14/null-stern6.jpg?w660" alt="">
+              <div class="overlay">
+                <h3>Null Stern</h3>
+                <p>Located in the middle of the Swiss Alps, it only features a bed with linens...</p>
+                        <p><a href="#"><button>more info.</button></a></p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/01/23/14/null-stern6.jpg?w660" alt="">
+              <div class="overlay">
+                <h3>Null Stern</h3>
+                <p>Located in the middle of the Swiss Alps, it only features a bed with linens...</p>
+                        <p><a href="#"><button>more info.</button></a></p> 
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="hovereffect">
+              <img class="img-responsive" src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/01/23/14/null-stern6.jpg?w660" alt="">
+              <div class="overlay">
+                <h3>Null Stern</h3>
+                <p>Located in the middle of the Swiss Alps, it only features a bed with linens...</p>
+                        <p><a href="#"><button>more info.</button></a></p> 
+              </div>
+            </div>
+          </div>       
+        </div>
+      </div>
+    </div> 
+    </section> 
+    </main>
+    
+    <footer>
+        <div id="footer">
+            <a id="logo-1" href="https://www.facebook.com/wildcodeschoolportugal/"></a>
+            <a id="logo-2" href="https://www.linkedin.com/school/wild-codes-chool/"></a>
+            <a id="logo-3" href="https://www.instagram.com/wildcodeschoollisbon/"></a>
+            <a id='logo-4' href="https://twitter.com/WildCodeSchool"></a>
+        </div>
+
+    </footer>
+
+    <script>
+            function myFunction(x) {
+              x.classList.toggle("change");
+
+              document.getElementById('side-menu').classList.toggle('active');
+            }
+            
+            const hideHeadBar = document.getElementsByClassName('head-bar')[0];
+            const secPage = document.getElementsByClassName('sec-page')[0];
+            const descricaoAparece1 = document.getElementsByClassName("descricao-aparece")[0];
+            const descricaoAparece2 = document.getElementsByClassName("descricao-aparece")[1];
+            const descricaoAparece3 = document.getElementsByClassName("descricao-aparece")[2];
+            const imageDescription = document.getElementsByClassName('image-description')[0];
+            const closeDescription = document.querySelector('.close-description');
+            const description1 = document.querySelector('#description-1');
+            const description2 = document.querySelector('#description-2');
+            const description3 = document.querySelector('#description-3');
+            const prevButton = document.querySelector('.carousel-control-prev');
+            const nextButton = document.querySelector('.carousel-control-next');
+            const redLogo1 = document.getElementById('red-logo-1');
+            const redLogo2 = document.getElementById('red-logo-2');
+            const redBox1 = document.getElementsByClassName('red-box-1')[0];
+            const redBox2 = document.getElementsByClassName('red-box-2')[0];
+            const contactForm = document.getElementById('contact-form');
+            const closeForm = document.getElementById('close-form');
+            const closeComment = document.getElementById('comment-close');
+            const newsfeed = document.getElementById('newsfeed');
+
+            redLogo1.addEventListener('click', () => {
+
+if (window.matchMedia("(max-width: 750px)").matches) {
+    redBox1.style.width = '100%';
+} else {
+    redBox1.style.width = '40%';
+}
+
+if (window.matchMedia("(max-height: 600px)").matches) {
+    redBox1.style.height ='450px';
+} else {
+    redBox1.style.height ='500px';
+}
+redBox1.style.backgroundColor ='rgb(240, 240, 240)';
+redBox1.style.borderTop ='red 2px solid';
+redBox1.style.borderRight ='red 2px solid';
+newsfeed.style.display = 'flex';
+newsfeed.style.left = '0%';
+newsfeed.style.borderBottom ='red 2px solid';
+newsfeed.style.backgroundColor ='rgb(240, 240, 240)';
+})
+            
+            descricaoAparece1.addEventListener('click', () => {
+              imageDescription.style.display = 'flex';
+              description1.style.display = 'block';
+              secPage.style.paddingBottom = '1050px';
+            })
+
+            descricaoAparece2.addEventListener('click', () => {
+              imageDescription.style.display = 'flex';
+              description2.style.display = 'flex';
+              secPage.style.paddingBottom = '1350px';
+            })
+
+            descricaoAparece3.addEventListener('click', () => {
+              imageDescription.style.display = 'flex';
+              description3.style.display = 'block';
+              secPage.style.paddingBottom = '1950px';
+            })
+
+            closeDescription.addEventListener('click', () => {
+              secPage.style.paddingBottom = '0px';
+              imageDescription.style.display = 'none';
+              description1.style.display = 'none';
+              description2.style.display = 'none';
+              description3.style.display = 'none';
+            })
+
+            prevButton.addEventListener('click', () => {
+              secPage.style.paddingBottom = '0px';
+              imageDescription.style.display = 'none';
+              description1.style.display = 'none';
+              description2.style.display = 'none';
+              description3.style.display = 'none';
+            })
+
+            nextButton.addEventListener('click', () => {
+              secPage.style.paddingBottom = '0px';
+              imageDescription.style.display = 'none';
+              description1.style.display = 'none';
+              description2.style.display = 'none';
+              description3.style.display = 'none';
+            })
+
+            redLogo2.addEventListener('click', () => {
+                redBox2.style.width = '250px';
+                if (window.matchMedia("(max-height: 600px)").matches) {
+                    redBox2.style.height ='400px';
+                    formSubject.style.height = '125px';
+                } else {
+                    redBox2.style.height ='460px';
+                }
+                redBox2.style.backgroundColor ='rgb(240, 240, 240)';
+                redBox2.style.borderTop ='red 1px solid'
+                redBox2.style.borderRight ='red 1px solid'
+                contactForm.style.backgroundColor ='rgb(240, 240, 240)';
+                contactForm.style.display = 'flex';
+                contactForm.style.borderBottom ='red 1px solid'
+            })
+
+            closeComment.addEventListener('click', () => {
+                redBox1.style.width = '60px';
+                redBox1.style.height ='40px';
+                newsfeed.style.display = 'none';
+                redBox1.style.backgroundColor ='red';
+                redBox1.style.borderTop ='';
+                redBox1.style.borderRight ='';
+                newsfeed.style.backgroundColor ='red';
+                newsfeed.style.borderBottom ='';
+            })
+
+            closeForm.addEventListener('click', () => {
+                redBox2.style.width = '60px';
+                redBox2.style.height ='40px';
+                contactForm.style.display = 'none';
+                redBox2.style.backgroundColor ='red';
+                redBox2.style.borderTop ='';
+                redBox2.style.borderRight =''
+                contactForm.style.backgroundColor ='red';
+                contactForm.style.borderBottom ='';
+            })
+
+      </script>
+<!--====== Javascripts & Jquery ======-->
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/circle-progress.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
